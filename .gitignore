@@ -1,0 +1,35 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Quarto and logs
+.quarto/
+*_files/
+*.log
+
+# Data are excluded by default. Deliberately revise these rules only when
+# files are small, redistributable, and free of sensitive information.
+data/raw/*
+!data/raw/README.md
+data/derived/*
+!data/derived/README.md
