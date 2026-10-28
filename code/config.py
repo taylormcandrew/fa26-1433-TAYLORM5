@@ -42,6 +42,9 @@ FIGURES = OUTPUT / "figures"
 UNMATCHED = OUTPUT / "unmatched_schools.csv"
 EVENT_AUDIT = OUTPUT / "event_categories.csv"
 
+for _d in (INTERMEDIATE, TABLES, FIGURES):      # create output folders on a fresh clone
+    _d.mkdir(parents=True, exist_ok=True)
+
 # ---------------------------------------------------------------------------
 # Sample window and timing
 # ---------------------------------------------------------------------------
@@ -94,6 +97,8 @@ EVENT_RULES = [
                     r"career day|college week|lock-in|\bevent\b"),
 ]
 VISIT_WORDS = r"visit|\bhsv\b|virtual|zoom"
+# Used only when a file has no event-type column (e.g. scraped pages)
+SCHOOL_NAME_WORDS = r"high school|\bhs\b|\bhigh\b|academy|school|prep\b|preparatory|collegiate|secondary"
 
 # Main outcome uses these categories. The robustness column also counts
 # fairs hosted at a single school.
@@ -158,3 +163,25 @@ VISIT_FILES = {
         "event_type": "Event Type",
     },
 }
+
+# ---------------------------------------------------------------------------
+# Web scraping (code/scrape_*.py): archived admissions travel schedules
+# ---------------------------------------------------------------------------
+# Universities to search, one row each: univ_id, name, domain (e.g. colorado.edu).
+SCRAPE_TARGETS = ROOT / "data" / "manual" / "scrape_targets.csv"
+# Pages you have confirmed are travel schedules: univ_id, url (an exact URL, or a
+# prefix ending in * to include every page under it), notes.
+TRAVEL_PAGES = ROOT / "data" / "manual" / "travel_pages.csv"
+SCRAPE_CACHE = RAW / "scrape"                       # downloaded snapshots (not committed)
+SCRAPE_CANDIDATES = OUTPUT / "scrape_candidate_pages.csv"
+SCRAPE_EVENTS_LOG = OUTPUT / "scrape_parse_log.csv"
+SCRAPE_VALIDATION = OUTPUT / "scrape_validation_cu_boulder.csv"
+
+SCRAPE_FROM = "20210801"        # first snapshot date searched (YYYYMMDD)
+SCRAPE_TO = "20260930"          # last snapshot date searched
+# Words that mark a page as a likely travel schedule (case-insensitive, in the URL)
+SCRAPE_URL_KEYWORDS = ["travel", "visit", "counselor", "on-the-road", "near-you", "nearyou",
+                       "representative", "rep-", "in-your-area", "events", "fair"]
+SCRAPE_DELAY_SECONDS = 2.0      # pause between requests to the Internet Archive (be polite)
+# Put your email here so the Internet Archive can contact you if your requests cause trouble.
+SCRAPE_CONTACT_EMAIL = "taylorm5@mit.edu"

@@ -12,7 +12,7 @@ Visit" is still treated as a school visit, and a "High School Visit" row titled
 "Cheyenne Mountain Admitted Student 1:1s" is not.
 
 Outputs
-  data/intermediate/visits_standardized.csv
+  data/derived/visits_standardized.csv
   output/event_categories.csv   every distinct title with its category, to audit by eye
 """
 
@@ -59,8 +59,12 @@ def classify(title, event_type):
     for category, pattern in config.EVENT_RULES:
         if re.search(pattern, t):
             return category
-    et = "" if pd.isna(event_type) else str(event_type).lower()
+    et = "" if pd.isna(event_type) else str(event_type).lower().strip()
     if "visit" in et or re.search(config.VISIT_WORDS, t):
+        return "hs_visit"
+    # Scraped travel pages often list just the school ("Loveland High School") with no
+    # event type; with no type to go on, a bare school name is treated as a school visit.
+    if not et and re.search(config.SCHOOL_NAME_WORDS, t):
         return "hs_visit"
     return "other"
 

@@ -25,7 +25,7 @@ All analysis choices (cycle dates, URM threshold, which event categories count, 
 4. Run `bash run.sh`, then check:
    - `output/event_categories.csv`: every distinct event title with its category. If one is wrong, adjust `EVENT_RULES` in `config.py`.
    - `output/unmatched_schools.csv`: fill in `nces_id` for the rows that matter and copy them to `data/manual/hs_crosswalk.csv`.
-   - The `match_method` column of `data/intermediate/visits_clean.csv`: spot-check rows matched by `fuzzy_zip`.
+   - The `match_method` column of `data/derived/visits_clean.csv`: spot-check rows matched by `fuzzy_zip`.
 
 ## Running with only some universities
 
@@ -38,7 +38,24 @@ The pipeline runs at any stage of data collection:
 
 ## Matching quality (CU Boulder, first run)
 
-85.5% of CU's 3,382 eligible visits match a high school with demographics. A hand check of 75 random matches (exact name + ZIP, and close-name matches within a ZIP) found all 75 correct. Unmatched visits are mostly private schools that did not answer the Private School Survey in either year; they are listed in `output/unmatched_schools.csv`.
+86.0% of CU's 3,382 eligible visits match a high school with demographics. A hand check of 75 random matches (exact name + ZIP, and close-name matches within a ZIP) found all 75 correct. Close-name matches within a city (for records without ZIPs) require 90% similarity after removing the city's own words from both names. Unmatched visits are mostly private schools that did not answer the Private School Survey in either year; they are listed in `output/unmatched_schools.csv`.
+
+## Scraping archived travel schedules (instead of records requests)
+
+Admissions offices post upcoming high-school visits on "travel schedule" pages, often Slate portals such as `.../portal/travel`. These pages only show *upcoming* visits, so scraping them today cannot recover 2021-2023. Instead, the scripts read saved copies of these pages from the Internet Archive's Wayback Machine, where each copy lists the visits that were upcoming on the day it was saved, and stitch them together. This follows Salazar, Jaquette and Han (2021), who scraped admissions websites weekly and supplemented them with records requests.
+
+1. **List universities** in `data/manual/scrape_targets.csv` (`univ_id, name, domain`).
+2. **Find candidate pages:** `python code/scrape_find_pages.py`. This writes `output/scrape_candidate_pages.csv` with the number of saved versions per cycle. Open the promising URLs in a browser; copy real travel schedules into `data/manual/travel_pages.csv` (`univ_id, url, notes`; end a URL with `*` to include every page under it). Only pages with saved versions both before (2021, 2022) and after (2023+) SFFA are useful.
+3. **Download and parse:** `python code/scrape_events.py` (or `... <univ_id>`). This downloads each saved version once (cached in `data/raw/scrape/`, with a 2-second pause between requests), and writes `data/raw/visits/<univ_id>_scraped.csv`. Check `output/scrape_parse_log.csv`: saved pages with 0 events usually mean a layout the parser does not read yet. `--parse-only` re-parses the cache without downloading; `--live` also saves today's version from the university's own site.
+4. **Validate against CU's records:** list CU's travel page, run step 3 for `cu_boulder`, then `python code/scrape_validate.py`. It reports, by cycle, how many record visits the scraper found (recall) and whether the share going to high-URM schools matches the records.
+5. **Add to the analysis:** add a row to `data/raw/universities.csv` and an entry to `VISIT_FILES` in `code/config.py`:
+
+   ```python
+   "ucla": {"file": "ucla_scraped.csv", "date": "date", "date_format": "%Y-%m-%d",
+            "title": "title", "city_state": "city_state", "event_type": "event_type"},
+   ```
+
+Set `SCRAPE_CONTACT_EMAIL` in `code/config.py` so the Internet Archive can reach you about your requests.
 
 ## Setup (once)
 
