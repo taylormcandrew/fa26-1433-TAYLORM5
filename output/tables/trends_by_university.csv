@@ -1,0 +1,6 @@
+univ_id,name,state,exposed,cycle,n_eligible,n_matched,match_rate,y_50,n_zip,y_zip_50
+cu_boulder,University of Colorado Boulder,CO,1,2021,205,171,0.8341463414634146,0.175438596491228,0,
+cu_boulder,University of Colorado Boulder,CO,1,2022,544,424,0.7794117647058824,0.1674528301886792,0,
+cu_boulder,University of Colorado Boulder,CO,1,2023,672,587,0.8735119047619048,0.131175468483816,0,
+cu_boulder,University of Colorado Boulder,CO,1,2024,984,861,0.875,0.1324041811846689,0,
+cu_boulder,University of Colorado Boulder,CO,1,2025,977,850,0.8700102354145343,0.1388235294117647,0,

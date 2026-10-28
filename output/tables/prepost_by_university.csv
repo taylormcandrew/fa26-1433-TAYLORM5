@@ -1,0 +1,2 @@
+univ_id,outcome_level,share_pre,share_post,difference,se_clustered,p_value,visits_pre,visits_post,clusters,clustered_by
+cu_boulder,school,0.16974789915966387,0.13446475195822455,-0.03528314720143938,0.015046051088957608,0.0190265457569612,595,2298,1306,nces_id
