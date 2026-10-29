@@ -1,0 +1,6 @@
+univ_id,year,page,copies,failed,events,first_saved,last_saved,live,status
+uga,2022,https://apply.uga.edu/portal/fairs,3,0,107,2022-10-01,2022-11-27,False,ok
+uga,2023,https://apply.uga.edu/portal/fairs,1,0,75,2023-10-04,2023-10-04,False,ok
+uga,2024,https://apply.uga.edu/portal/fairs,3,0,358,2024-08-29,2024-11-04,False,ok
+uga,2025,https://apply.uga.edu/portal/fairs,3,0,0,2025-08-13,2025-11-17,False,"copies saved, but no events found in Sep-Nov"
+uga,2026,https://apply.uga.edu/portal/fairs,1,0,1,2026-10-29,2026-10-29,True,ok

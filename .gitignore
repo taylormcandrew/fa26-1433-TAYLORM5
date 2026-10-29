@@ -33,3 +33,4 @@ data/raw/*
 !data/raw/README.md
 data/derived/*
 !data/derived/README.md
+scraper/cache/
