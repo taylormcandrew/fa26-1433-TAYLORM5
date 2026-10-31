@@ -158,3 +158,11 @@ VISIT_FILES = {
         "event_type": "Event Type",
     },
 }
+
+# Scraped calendars (scraper/export.py) all share one format, so every
+# data/raw/visits/<univ>_scraped.csv file is added here automatically.
+SCRAPED_FORMAT = {"date": "date", "date_format": "%Y-%m-%d", "title": "title",
+                  "school_name": None, "city_state": "city_state", "city": None,
+                  "state": None, "zip": "zip", "nces_id": None, "event_type": "event_type"}
+for _f in sorted(VISITS_DIR.glob("*_scraped.csv")):
+    VISIT_FILES[_f.stem.removesuffix("_scraped")] = dict(SCRAPED_FORMAT, file=_f.name)

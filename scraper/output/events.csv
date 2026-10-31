@@ -1,6 +1,138 @@
 univ_id,event_id,title,date,location,group,saved
+uga,fae835cc-00b1-467d-8eec-9dd030978e3e,Fort Worth Country Day College Day Online,2021-09-10,,Online,20210805045436
+uga,757aac33-afa5-4f61-85d7-8180914203a4,Charlotte Latin School,2021-09-08,"Charlotte, NC",United States—North Carolina,20210805045436
+uga,5528ea92-f4ff-4f48-a618-23ba2d980cb5,Providence Day School,2021-09-08,"Charlotte, NC",United States—North Carolina,20210805045436
+uga,162196ad-67ca-4e0e-92ca-42c79378eefd,Independence High School,2021-09-08,"Charlotte, NC",United States—North Carolina,20210805045436
+uga,e6e4a63b-e42e-4e2c-9d35-859df0000fdf,Legacy Christian Academy College Fair,2021-08-23,"Frisco, TX",United States—Texas,20210805045436
+uga,b40c037e-9243-4478-82b3-88f73c378ff7,Episcopal School of Dallas,2021-09-07,"Dallas, TX",United States—Texas,20210805045436
+uga,9ed0e583-3b11-4746-8ce2-8654eacc9600,Jesuit College Preparatory School,2021-09-07,"Dallas, TX",United States—Texas,20210805045436
+uga,fe32fa7f-4629-4ac2-a94e-b5d36b7ef789,The Hockaday School,2021-09-07,"Dallas, TX",United States—Texas,20210805045436
+uga,baadc67c-c622-40e8-beac-35c597bd6b5f,St. Mark's School of Texas,2021-09-08,"Dallas, TX",United States—Texas,20210805045436
+uga,44711597-216c-4766-bc59-08e2724f7fd5,College Night for Dallas Catholic High Schools,2021-09-21,"Dallas, TX",United States—Texas,20210805045436
+uga,079678f8-654b-4995-a5c5-49c51e5e77c7,St Catherine's,2021-09-08,"Richmond, VA",United States—Virginia,20210805045436
+uga,e72c244b-b14c-4c02-8f52-a47b787211d3,Charlotte Catholic High School,2021-09-07,"Charlotte, NC",United States—North Carolina,20210805045436
+uga,f5670848-406f-48cf-a182-ced1264c3483,St. Christopher's,2021-09-08,"Richmond, VA",United States—Virginia,20210805045436
+uga,e7d1f2d6-9eea-437e-b5e4-78b617ef3bf0,Steward School,2021-09-08,"Richmond, VA",United States—Virginia,20210805045436
+uga,c3e79819-ec3d-4f62-887d-4bd4af301c49,Woodberry Forest,2021-09-08,"Woodberry For, VA",United States—Virginia,20210805045436
+uga,692ba85f-9f0d-4779-b08a-2d2dd9dea012,Langley High,2021-09-15,"Mclean, VA",United States—Virginia,20210805045436
+uga,c6121c7d-37ac-4088-bbb3-938c256672e2,McLean High,2021-09-15,"Mclean, VA",United States—Virginia,20210805045436
+uga,833910bf-93ab-4f81-9df3-e958b08c66b6,Chantilly High,2021-09-15,"Chantilly, VA",United States—Virginia,20210805045436
+uga,4f3e1973-e6bd-4602-8a02-096a6fce3015,South Lakes,2021-09-21,"Reston, VA",United States—Virginia,20210805045436
+uga,47db7aa9-a746-4f97-840d-9eeff6f1dfe5,Alexandria High,2021-09-23,"Alexandria, VA",United States—Virginia,20210805045436
+uga,af0db2e2-33dc-48d2-8a0d-d2d91ee478ab,Bishop Ireton,2021-09-23,"Alexandria, VA",United States—Virginia,20210805045436
+uga,8adc0d84-74e1-4f59-8381-d06f21da9494,Episcopal,2021-09-23,"Alexandria, VA",United States—Virginia,20210805045436
+uga,ee0c0e94-0231-4566-9f24-59cf1655d0ce,Commonwealth Academy,2021-09-23,"Alexandria, VA",United States—Virginia,20210805045436
+uga,a1e834d7-5d14-4e8e-8177-ae524c6f1062,Oakton,2021-10-07,"Vienna, VA",United States—Virginia,20210805045436
+uga,66b23d90-432c-4661-b95d-556a588e0b07,Foxcroft,2021-10-07,"Middleburg, VA",United States—Virginia,20210805045436
+uga,77115ca5-8e2c-4573-8280-0305cd5b1830,Collegiate,2021-09-08,"Richmond, VA",United States—Virginia,20210805045436
+uga,2ce9de70-0e68-4d77-a864-3230f9028796,Paul D Schreiber Senior High Mini College Fair,2021-10-06,"Prt Washingtn, NY",United States—New York,20210805045436
+uga,50d2dbc7-af3f-47a0-b5d2-963e52d46c71,Highland Park High School College Night 2021,2021-09-14,"Dallas, TX",United States—Texas,20210805045436
+uga,2b39bda7-b255-4aed-aa44-dc2e00ee010e,Garden City High School Mini College Fair,2021-10-05,"Garden City, NY",United States—New York,20210805045436
+uga,89159cd6-c284-4576-9ada-59a404e433a6,Cathedral,2021-09-13,"Washington, DC",United States—District of Columbia,20210805045436
+uga,3894ae17-71ae-4f61-a675-47bd10193e25,Wilson,2021-09-14,"Washington, DC",United States—District of Columbia,20210805045436
+uga,d1b3d5e5-62e7-41ba-bb72-7baa0d91fbdb,Georgetown Visitation,2021-09-17,"Washington, DC",United States—District of Columbia,20210805045436
+uga,bc6a858b-e428-46f7-bdd8-4c672aa52f21,Herricks Senior High School Mini College Fair,2021-10-06,"New Hyde Park, NY",United States—New York,20210805045436
+uga,372edff8-9ad8-40a0-95e4-68a79904070e,Field School,2021-09-17,"Washington, DC",United States—District of Columbia,20210805045436
+uga,ea222100-9c16-4a22-a6ec-5a7aa7dfce39,Gonzaga,2021-09-17,"Washington, DC",United States—District of Columbia,20210805045436
+uga,26e4a317-5aed-43a3-b43b-e09fe4980359,The Korea Times College Fair 2021,2021-08-07,"Norcross, GA",United States—Georgia,20210805045436
+uga,7f0cabe8-492d-4dbc-93e8-e733a63d5a0f,North Oconee High School,2021-08-19,"Bogart, GA",United States—Georgia,20210805045436
+uga,59838fba-f109-4fd0-8b5a-c78f33722218,Peachtree Ridge High School College Fair,2021-08-23,"Suwanee, GA",United States—Georgia,20210805045436
+uga,9e54d3a2-9722-4d44-9359-8f5e7675f10d,North Atlanta High School College Fair,2021-09-17,"Atlanta, GA",United States—Georgia,20210805045436
+uga,29d35606-4eff-42f0-88c6-c360aae493ec,St. Augustine High School's Fall 2021 College Fair,2021-10-06,"New Orleans, LA",United States—Louisiana,20210805045436
+uga,0b265aaf-ea40-426e-bd37-fccf7f5b83c1,Walter Johnson,2021-09-14,"Bethesda, MD",United States—Maryland,20210805045436
+uga,dc2c3a14-e21a-4ff9-84bb-9b947ea2fde3,Georgetown Preparatory School,2021-09-14,"N Bethesda, MD",United States—Maryland,20210805045436
+uga,1896e932-d1a9-4842-9c68-5b896c6f4cdb,St. Alban's,2021-09-17,"Washington, DC",United States—District of Columbia,20210805045436
+uga,472ab50e-6fec-4911-8571-3ff815806365,Winston Churchill,2021-09-17,"Potomac, MD",United States—Maryland,20210805045436
+uga,7cc6330f-c540-4ca1-9bf9-21cfbb68a5c6,Bullis,2021-09-15,"Potomac, MD",United States—Maryland,20210805045436
+uga,f6a1a3cd-6600-4b16-9b03-6cc607c52e64,Thomas Sprigg Wootton High School College Fair,2021-09-29,"Rockville, MD",United States—Maryland,20210805045436
+uga,855af7b1-36e4-40c5-920b-77f7455d2e1a,Academy of the Holy Cross,2021-09-29,"Kensington, MD",United States—Maryland,20210805045436
+uga,aa5bad07-b1b3-4ffb-a15f-061ab6e7cbe6,Rockville High,2021-09-29,"Rockville, MD",United States—Maryland,20210805045436
+uga,dde2a7b1-4f34-4c2f-b3bd-07e72cea9c75,Walt Whitman High School,2021-09-21,"Bethesda, MD",United States—Maryland,20210805045436
+uga,dbbc2e1d-7b9a-41b5-a3a0-b76809573b88,Holton Arms,2021-09-21,"Bethesda, MD",United States—Maryland,20210805045436
+uga,78b59fa0-4418-4b62-bbef-f65449d4ae7e,Sherwood High,2021-09-29,"Sandy Spring, MD",United States—Maryland,20210805045436
+uga,e0fcdd97-29d4-4ea7-b646-7954fe33dae3,Key School,2021-09-20,"Annapolis, MD",United States—Maryland,20210805045436
+uga,68fa2557-3873-442d-9825-30a8639e516e,Broadneck,2021-09-20,"Annapolis, MD",United States—Maryland,20210805045436
+uga,4e6c6d04-39f6-4bc5-9da4-95905399cf4f,Archbishop Spalding,2021-09-20,"Severn, MD",United States—Maryland,20210805045436
+uga,72ef71fb-0994-4a74-a8bc-ca058aeb3102,Severn School,2021-09-20,"Severna Park, MD",United States—Maryland,20210805045436
+uga,9ad6d5c5-fc65-46ed-afef-34a9c8e9a164,Bethesda Chevy Chase,2021-09-21,"Bethesda, MD",United States—Maryland,20210805045436
+uga,7dca79b1-9b7c-45f7-af42-01ba85cac563,PROBE - Bainbridge Fair,2021-10-12,"Bainbridge, GA",United States—Georgia,20211010223354
+uga,848260cb-9c95-440c-a91d-5bf6e6ae7884,Alexandria Annual College Fair,2021-10-14,"Alexandria, VA",United States—Virginia,20211010223354
+uga,aa592bc1-3c5e-41b4-a6e1-a4f58d2127ab,Horace Greeley High School,2021-10-12,,Online,20211010223354
+uga,fa39e537-e238-47a0-9335-c3c096a26f0b,Evening with UGA - Cobb County,2021-10-12,,Online,20211010223354
+uga,0843b78c-02ee-4940-b44c-07393f4a20b8,EducationUSA Sub-Saharan Africa Virtual Fair,2021-10-13,,Online,20211010223354
+uga,ce4d8014-f75d-4489-9249-f20ca63ac8f7,Garden City High School,2021-10-13,,Online,20211010223354
+uga,a954d3e0-8510-4a38-85c3-1afb4677ce9e,Redan,2021-10-14,,Online,20211010223354
+uga,4ba3bafa-eee4-49f4-9adc-c238106b7cd8,McDonough,2021-10-14,,Online,20211010223354
+uga,4e64b529-c28b-474b-b364-06dabf2fcafc,Evening with UGA - Colorado,2021-10-14,,Online,20211010223354
+uga,62928c82-59c8-4a43-b5e6-f8021b25eeb0,Coretta Scott King Young Women's Leadership Academy,2021-10-15,,Online,20211010223354
+uga,279f2d03-7817-4cef-981f-4eb6dd433121,Heritage High School,2021-10-15,,Online,20211010223354
+uga,9bfe5ad4-ab01-4163-9c95-4b00e45f65e0,Hunterdon Central Regional HS,2021-10-12,,Online,20211010223354
+uga,86e1ab27-304d-4c2c-bfcc-8072988d9674,Strake Jesuit,2021-10-15,,Online,20211010223354
+uga,82cbfbed-51d1-45eb-bc6d-a481a1333566,Ann Richards School for Young Women Leaders,2021-10-18,"Austin, TX",United States—Texas,20211017033058
+uga,d6ab51a5-ee0a-4171-a957-f3e9e1b7a5f2,Hyde Park High School,2021-10-19,"Austin, TX",United States—Texas,20211017033058
+uga,a31e9d0d-044d-43aa-9ecf-34a6ac89314d,Vandegrift High School,2021-10-18,"Austin, TX",United States—Texas,20211017033058
+uga,ad303491-aa09-4a07-b560-284f84e504bb,St. Dominic Savio College Fair,2021-10-18,"Austin, TX",United States—Texas,20211017033058
+uga,77da81e9-f2e9-4fe5-aac1-92bdba4bfcaf,Westlake High School,2021-10-19,"Austin, TX",United States—Texas,20211017033058
+uga,6cb51f5f-57ed-4ddb-ba88-68367dec7442,Austin High School,2021-10-19,"Austin, TX",United States—Texas,20211017033058
+uga,af886df1-be8f-4b4f-9c6f-d1976d470ca0,Saint Michael's Catholic Academy,2021-10-19,"Austin, TX",United States—Texas,20211017033058
+uga,c1d283f0-e8b2-4182-aa0f-03995df3d418,Hills of Austin College Fair @ Westlake High School,2021-10-20,"Austin, TX",United States—Texas,20211017033058
+uga,27722f0b-457f-4463-b02b-e2b12833d67b,Hills of Austin College Fair @ Lake Travis High School,2021-10-20,"Austin, TX",United States—Texas,20211017033058
+uga,1b41ae82-0c5f-4743-b43f-971fcf934bed,Hills of Austin College Fair @ St. Michael's Catholic Academy,2021-10-20,"Austin, TX",United States—Texas,20211017033058
+uga,725ccd1e-cdef-430c-8510-d8a0c279f292,21st Annual ALCANZA College Fair,2021-10-22,"Fairfax, VA",United States—Virginia,20211017033058
+uga,906dfae3-e2fe-483e-8fec-aa95e48c84a3,Pflugerville ISD College Fair,2021-10-19,"Pflugerville, TX",United States—Texas,20211017033058
+uga,e8894e4c-0000-4b47-9074-de19cb3e5328,Southwest Dekalb,2021-10-19,,Online,20211017033058
+uga,5e5430c3-c512-46c6-83a7-7f9b9d554d3b,Half Hollow Hills HS West,2021-10-20,,Online,20211017033058
+uga,71472400-0954-4b0b-9c91-62d5f84052d8,Turner Chapel A.M.E. 2021 Virtual College Fair,2021-10-23,,Online,20211017033058
+uga,43a35856-7e53-4c31-8290-f98669b66590,Arabia Mountain,2021-10-22,,Online,20211017033058
+uga,b127c792-618a-4444-8e13-f0f441ddd625,Clarke Central High School,2021-11-12,,Online,20211025205640
+uga,017d1e73-af68-45bb-bf62-d08899141bcf,CDMHS In-Person Evening Fall College Fair,2021-10-27,"Newport Beach, CA",United States—California,20211025205640
+uga,4b503765-8de2-4998-a64e-56512bf7c1bc,Capstone Academy- Atlanta,2021-10-27,"Atlanta, GA",United States—Georgia,20211025205640
+uga,3a68e5fb-2d78-4b9c-87db-0eac57695efd,LHHS College Fair 2021,2021-10-30,"Fairburn, GA",United States—Georgia,20211025205640
+uga,a05783e3-9845-427c-adc4-fd0a3fe77887,2021 Norcross HS College Fair,2021-11-11,"Norcross, GA",United States—Georgia,20211025205640
+uga,b7f7d2d6-1449-4835-a56c-c276cf5cab3d,"Grapevine-Colleyville Independent School District’s 2021 College, Career and Financial Aid Night",2021-11-02,"Grapevine, TX",United States—Texas,20211025205640
+uga,642068ad-1811-4af7-b53c-3dd4588a7a8e,Henrico County College and Career Night,2021-11-03,"Henrico, VA",United States—Virginia,20211025205640
+uga,937d06f7-aa81-4046-9722-a70bfeb5c6e8,Carroll Senior High School College Fair,2021-11-03,"Southlake, TX",United States—Texas,20211025205640
+uga,fcb40140-e839-4f06-af12-c535082930a5,Upper Saint Clair High School,2021-11-12,,Online,20211025205640
+uga,a1b1bc20-7dae-4c76-b057-ca136cd44619,Dekabl Early College,2022-03-04,"Stone Mtn, GA",United States—Georgia,20211025205640
+uga,7db35a74-70ce-4836-b65a-e0c1eff7c912,Conestoga High,2021-11-12,,Online,20211025205640
+uga,3cc67fbb-7eca-41cb-832b-e5f9c7c4c2d9,The Woodlands High School,2021-10-26,,Online,20211025205640
+uga,d705a7d8-4fb9-4abb-8cf4-13399136d704,Dekalb Early College,2021-11-04,,Online,20211025205640
+uga,143fbafc-1421-45be-89b3-758fe59fad00,Georgia Cyber Academy,2021-11-11,,Online,20211025205640
+uga,544a5604-1116-4f59-bc03-560949fa53ca,Fall 21 Terrific 10: College Exploration Series 8,2021-10-26,,Online,20211025205640
+uga,a1adce78-b61f-4663-ad6f-24d48500bc48,Brentwood Academy,2021-10-27,,Online,20211025205640
+uga,a26ab8bc-82c3-43d8-a387-67312a488caa,Paul D Schreiber Senior High,2021-10-27,,Online,20211025205640
+uga,dfdbc9eb-9fdb-4d42-adcf-e9b1916de86c,Hinsdale Central High School,2021-10-27,,Online,20211025205640
+uga,8d2551ad-aec0-4b88-b013-cd352369eb05,Fall 21 Terrific 10: College Exploration Series 7,2021-10-25,,Online,20211025205640
+uga,32ef52a4-8417-4d83-96c1-b225e29b5c10,Hapeville Charter,2021-10-29,,Online,20211025205640
+uga,645db620-5769-4790-9a27-b62ae73f8430,Brentwood School,2021-11-01,,Online,20211025205640
+uga,3d81acba-7928-4d61-b0ce-f523d3a2115e,Mira Costa High School,2021-11-03,,Online,20211025205640
+uga,9f9c095e-4a72-4b1a-a540-54fda0d7f8f5,Westfield High School,2021-11-03,,Online,20211025205640
+uga,98a5a2ca-457f-48fd-8862-253a5b5f906a,Fall 21 Terrific 10: College Exploration Series 9,2021-10-27,,Online,20211025205640
+uga,e33ce103-ff4e-4889-8099-bb11d3328bf7,VACRAO Spring 2022 Virtual Fairs,2022-03-22,,,20220308172557
+uga,42ac3b2b-9812-4333-a043-b613e146b86c,Paul Vi Catholic High School Spring College Night Program,2022-03-09,"Chantilly, VA",United States—Virginia,20220308172557
+uga,388422cc-1d1a-40c7-8b17-070d0c40b0f0,Flower Mound & Marcus Fair,2022-04-13,"Flower Mound, TX",United States—Texas,20220308172557
+uga,0305be53-2be2-4584-9b20-c56bd788a634,Our Lady of Good Counsel High School College Fair,2022-03-21,"Olney, MD",United States—Maryland,20220308172557
+uga,ec633436-f168-4edf-b270-4a22d5799e6c,2022 Loyola Academy Spring College Fair,2022-03-21,"Wilmette, IL",United States—Illinois,20220308172557
+uga,d217f1ec-e089-4e7d-9021-e72450e47f34,PROBE - Athens Fair,2022-03-22,"Athens, GA",United States—Georgia,20220308172557
+uga,96e6595c-a78b-4b8d-8497-0bdd21ec3baa,PROBE - Cobb Quest Fair,2022-03-21,"Powder Spgs, GA",United States—Georgia,20220308172557
+uga,0110dd54-0396-45a6-9297-276602c3652e,PROBE - South Dekalb Probe Fair,2022-03-10,"Clarkston, GA",United States—Georgia,20220308172557
+uga,ea9b2b8e-850f-4d97-bf67-5bcee7efca34,St. John's College High School Annual College Fair,2022-03-15,"Washington, DC",United States—District of Columbia,20220308172557
+uga,35b5e417-4498-4e9b-84eb-3acaa4ce88ea,"WAIS Mini Fairs: Potomac, St. Stephen's and St. Agnes, Siena & Commonwealth",2022-04-03,"Mclean, VA",United States—Virginia,20220327072608
+uga,b0d3491a-d4c7-4983-9cdc-0627474b3252,Baltimore Orioles & City Schools - College and Career Fair Invitation,2022-04-28,"Baltimore, MD",United States—Maryland,20220327072608
+uga,dbfb659a-2f05-421c-ac98-a94aa495485c,NACAC - Montgomery County,2022-04-06,"Boyds, MD",United States—Maryland,20220327072608
+uga,5b2dbb32-1864-4e2a-9124-c335e8c9015c,NACAC - Montgomery County,2022-04-05,"Boyds, MD",United States—Maryland,20220327072608
+uga,2ffd7b69-bb1d-4ba6-b178-197f3e3c371a,WAIS Mini Fairs: Holton & Landon,2022-04-04,"Bethesda, MD",United States—Maryland,20220327072608
+uga,204dcd25-cb74-45b6-b294-2f05ba419fea,Mount Carmel Academy In-Person College Fair,2022-03-30,"New Orleans, LA",United States—Louisiana,20220327072608
+uga,4da7c0f8-94d0-47c4-ba34-8f59c7ec679f,SEC Spring Tour 2022 - Denver College Fair,2022-04-19,"Denver, CO",United States—Colorado,20220327072608
+uga,fcd709e2-8a46-466d-b0d3-e5ead9106355,Choate Spring College Fair,2022-04-11,"Wallingford, CT",United States—Connecticut,20220327072608
+uga,996899dd-9b78-4e58-8daf-6ea0922f07cd,SEC Spring Tour 2022 - Broomfield College Fair,2022-04-21,"Broomfield, CO",United States—Colorado,20220327072608
+uga,7ae56ac3-a359-4fd1-8d08-e3c8501ec246,SEC Spring Tour 2022 - Colorado Springs College Fair,2022-04-20,"Colorado Spgs, CO",United States—Colorado,20220327072608
+uga,5a73ca10-540d-4fd4-ae99-d63dcb844f5f,Syosset High School,2022-04-11,,Online,20220327072608
+uga,5192ed13-866e-4827-81c9-b159bf67c956,Middleburg College Fair,2022-04-07,"Middleburg, VA",United States—Virginia,20220327072608
+uga,33d1cb46-cf58-457e-8246-168711c5b800,Evening with UGA - Mount Paran Christian School,2022-04-25,"Kennesaw, GA",United States—Georgia,20220327072608
+uga,0d22032d-7010-48b9-a9a5-8d21b819b8ea,Richmond Area Independent Schools College Fair,2022-04-12,"Richmond, VA",United States—Virginia,20220327072608
+uga,6abc1ec4-de59-4831-b6d7-220dce1a1d73,Coffee High School,2022-05-18,,Online,20220518162217
 uga,5ae23729-0d4c-4fdd-8e67-989dbab2a9b8,Highland Park School,2022-10-03,,Online,20221001081826
-uga,fe38cd21-d83b-4282-a08b-bfa05d2b7ec0,PROBE - Fannin County Fair,2022-10-21,"Blue Ridge, GA",United States—Georgia,20221001081826
 uga,e9c1ac08-bac8-4720-bda0-1302436b4306,Cedar Grove High School College Fair,2022-10-21,"Ellenwood, GA",United States—Georgia,20221001081826
 uga,eaaeace5-1c5c-435b-be67-105e45d698e6,PROBE - Rabun County Fair,2022-10-20,"Tiger, GA",United States—Georgia,20221001081826
 uga,ee1a5133-54ae-47c7-a374-0361da5d1c05,Warren County High School Fair,2022-10-20,"Warrenton, GA",United States—Georgia,20221001081826
@@ -9,6 +141,7 @@ uga,c42a3515-79a2-45d2-a0a1-70ecd4400352,PROBE - Stephens County Fair,2022-10-19
 uga,60110341-e978-4325-9cdd-32da3f52a0e3,PROBE - Union County Fair,2022-10-18,"Blairsville, GA",United States—Georgia,20221001081826
 uga,7100c201-31a8-4eb3-871b-69a2215ad91d,PROBE - Towns County Fair,2022-10-18,"Hiawassee, GA",United States—Georgia,20221001081826
 uga,09a895fc-846b-41a7-9450-eabd8a888982,Cedar Shoals High School Fair,2022-10-18,"Athens, GA",United States—Georgia,20221001081826
+uga,65cd03ac-320d-47f9-adba-35d62f2d8486,PROBE - Athens Fair,2022-10-17,"Athens, GA",United States—Georgia,20221001081826
 uga,b0c7b794-affe-46e1-8fd8-b1763de7f7c9,PROBE - Lumpkin Fair,2022-10-17,"Dahlonega, GA",United States—Georgia,20221001081826
 uga,12bd6a0f-35a7-4c2e-b475-63749f4ea2e0,Tri-Cities High School,2022-10-15,"East Point, GA",United States—Georgia,20221001081826
 uga,048dbc76-8a18-4f6e-9f77-f4dc873ba275,PROBE - Gilmer County Fair,2022-10-11,"Ellijay, GA",United States—Georgia,20221001081826
@@ -21,10 +154,10 @@ uga,e83836ca-2ea6-4481-b3ee-094265cacbb1,North Cobb High School,2022-10-06,"Kenn
 uga,96ba621d-a2f6-49f4-b9b7-65b91dc91bda,Allatoona High School,2022-10-06,"Acworth, GA",United States—Georgia,20221001081826
 uga,20512a1d-3497-47bf-bc54-bc4ecd4d15b9,Elite Scholars Academy Early College Magnet School,2022-10-06,"Jonesboro, GA",United States—Georgia,20221001081826
 uga,c35265c1-c99a-4eed-910e-90d0690eb825,Campbell High School,2022-10-06,"Smyrna, GA",United States—Georgia,20221001081826
+uga,fe38cd21-d83b-4282-a08b-bfa05d2b7ec0,PROBE - Fannin County Fair,2022-10-21,"Blue Ridge, GA",United States—Georgia,20221001081826
 uga,260530bf-6cca-43b7-a2d2-2676480a1633,Druid Hills High School College Fair,2022-10-27,"Atlanta, GA",United States—Georgia,20221001081826
 uga,b59cb215-4249-461e-b39c-32ac553a1360,The ALCANZA College Fair,2022-10-19,"Fairfax, VA",United States—Virginia,20221001081826
 uga,462d262c-c151-4187-88a4-b6bc3d20a46e,Paul Vi Catholic High School,2022-10-07,"Chantilly, VA",United States—Virginia,20221001081826
-uga,6432591f-f637-432d-b7b8-7c96deaca24a,Freedom High School,2022-10-06,"South Riding, VA",United States—Virginia,20221001081826
 uga,7f018aa3-8ebe-46bb-bca3-3138119a51f2,West Potomac High School,2022-10-06,"Alexandria, VA",United States—Virginia,20221001081826
 uga,ac1d9ebd-ba06-4dd6-bf8b-14246fc4cc96,Wakefield School,2022-10-04,"The Plains, VA",United States—Virginia,20221001081826
 uga,96b82de5-4650-47c7-a014-9bb763d21d71,Foxcroft School,2022-10-04,"Middleburg, VA",United States—Virginia,20221001081826
@@ -32,13 +165,13 @@ uga,a214a897-df75-414a-aaad-b3c1265ae9e6,Mount Lebanon High School,2022-10-03,"P
 uga,5a797b19-2ec4-40a3-add4-3599d62fb806,North Allegheny Senior HS,2022-10-03,"Wexford, PA",United States—Pennsylvania,20221001081826
 uga,a2408777-3fec-4338-a18a-3f9f83c00ea5,Fox Chapel Area High School,2022-10-03,"Pittsburgh, PA",United States—Pennsylvania,20221001081826
 uga,db5766bb-94ea-4fb2-a375-7559d8135a20,Pine-Richland High School,2022-10-03,"Gibsonia, PA",United States—Pennsylvania,20221001081826
-uga,80c08b9d-ca27-49d2-b350-92cdbb9604b4,PROBE - Tift County Fair,2022-10-06,"Tifton, GA",United States—Georgia,20221001081826
 uga,5814a5a8-1f2f-47a0-a28e-07897ebd1623,Mount de Sales Academy and Mount Saint Joseph High School,2022-10-20,"Baltimore, MD",United States—Maryland,20221001081826
-uga,59f8c5f0-009c-4f38-879c-eca9b027f870,Hereford High,2022-10-10,"Parkton, MD",United States—Maryland,20221001081826
-uga,39676049-3830-4a97-82e1-8974ec6e3223,Northwest High School,2022-10-07,"Germantown, MD",United States—Maryland,20221001081826
+uga,80c08b9d-ca27-49d2-b350-92cdbb9604b4,PROBE - Tift County Fair,2022-10-06,"Tifton, GA",United States—Georgia,20221001081826
 uga,1804745e-9bca-4a13-8b79-0a94e0e1d411,McDonogh School,2022-10-10,"Owings Mills, MD",United States—Maryland,20221001081826
+uga,39676049-3830-4a97-82e1-8974ec6e3223,Northwest High School,2022-10-07,"Germantown, MD",United States—Maryland,20221001081826
+uga,59f8c5f0-009c-4f38-879c-eca9b027f870,Hereford High,2022-10-10,"Parkton, MD",United States—Maryland,20221001081826
 uga,44d413a9-d3e5-4b48-b3e9-f5ff67ec002e,St. George's Episcopal High School,2022-10-05,"Milner, GA",United States—Georgia,20221001081826
-uga,65cd03ac-320d-47f9-adba-35d62f2d8486,PROBE - Athens Fair,2022-10-17,"Athens, GA",United States—Georgia,20221001081826
+uga,6432591f-f637-432d-b7b8-7c96deaca24a,Freedom High School,2022-10-06,"South Riding, VA",United States—Virginia,20221001081826
 uga,9c5ee9ff-15bf-415d-aa0d-8eaf122235a7,Woodstock High School,2022-10-05,"Woodstock, GA",United States—Georgia,20221001081826
 uga,9c995cde-1a0c-45af-b7ba-a72474987165,EducationUSA Sub-Saharan Africa Virtual Fair,2022-10-08,,Online,20221001081826
 uga,71c144db-9233-4432-9bb6-d3f22dca0f3a,Hammond School,2022-10-07,,Online,20221001081826
@@ -51,7 +184,7 @@ uga,1aa3087d-6244-43c3-8912-da90423d1cdf,Cornerstone Prep Academy,2022-10-06,,On
 uga,69f55588-7499-4211-98ed-ad323d42c62b,Bishop Watterson High School,2022-10-06,,Online,20221001081826
 uga,2edaf741-3058-46b7-9658-6743c1e64e24,Kiran C.  Patel High School,2022-10-06,,Online,20221001081826
 uga,4a32a6b2-f3a8-4c9b-bfa2-797d7714b8b2,Weehawken High School,2022-10-10,,Online,20221001081826
-uga,be481a1c-545d-4794-91d4-9f6fdf969688,William A. Hough High School,2022-10-06,,Online,20221001081826
+uga,d11aebcd-7a8f-46c0-b725-4f0551b88a20,Lamar County High School,2022-10-05,"Barnesville, GA",United States—Georgia,20221001081826
 uga,9b6420e0-5890-4ab2-bd8e-2369db7af77a,McClure Health Science High School,2022-10-05,,Online,20221001081826
 uga,3ff844c3-ba96-4fbd-8585-4312b46a9e3e,Solon High School,2022-10-04,,Online,20221001081826
 uga,8cd40aae-b4c8-4f81-b02e-5974daf72eb5,St. Michael's Catholic Academy,2022-10-04,,Online,20221001081826
@@ -62,9 +195,9 @@ uga,513ab141-f380-476c-8505-9bfb32432842,John F Kennedy High School,2022-10-03,,
 uga,d972ae14-e9d2-48e0-b82b-44e9517df503,Manasquan High School,2022-10-03,,Online,20221001081826
 uga,82bedecd-07e0-4049-8b55-cc2449203a96,Ursuline School,2022-10-03,,Online,20221001081826
 uga,27b1ba5d-b9f3-43ac-849c-0f4f27d67f5a,Indian Hill High School,2022-10-03,,Online,20221001081826
-uga,d11aebcd-7a8f-46c0-b725-4f0551b88a20,Lamar County High School,2022-10-05,"Barnesville, GA",United States—Georgia,20221001081826
-uga,56d9d855-4c9a-4a22-b0cc-b343eef061b4,Darien High School,2022-10-10,,Online,20221001081826
 uga,262cf49f-89e4-4753-868b-3547ba4b46a0,Beaufort Academy,2022-10-05,,Online,20221001081826
+uga,56d9d855-4c9a-4a22-b0cc-b343eef061b4,Darien High School,2022-10-10,,Online,20221001081826
+uga,be481a1c-545d-4794-91d4-9f6fdf969688,William A. Hough High School,2022-10-06,,Online,20221001081826
 uga,46158e5b-3f6c-4435-83b6-fbc1d862a043,Southwest High School,2022-10-11,,Online,20221001081826
 uga,659ee44e-3587-49ed-a270-2d921ceec592,Paul D Schreiber Senior High,2022-10-11,,Online,20221001081826
 uga,37b5a754-f00b-48d0-bfe9-af1f7ca22149,Charles R. Drew High School,2022-10-05,"Riverdale, GA",United States—Georgia,20221001081826
@@ -73,11 +206,11 @@ uga,d3f55987-a98f-415e-813b-4a7504af8eb9,Blessed Trinity Catholic High School,20
 uga,27597427-a939-4936-88db-69c96550b33b,Kings Ridge Christian School,2022-10-04,"Alpharetta, GA",United States—Georgia,20221001081826
 uga,b9390477-ad82-4b8e-90a0-947dd6ca8c6b,Ben Franklin Academy,2022-10-04,"Atlanta, GA",United States—Georgia,20221001081826
 uga,34744331-cb67-49ca-a860-627c488843a8,PROBE - Houston County Fair,2022-10-04,"Perry, GA",United States—Georgia,20221001081826
-uga,50c60f5e-ecf6-4ad0-abf1-42faf6ea9ee9,PROBE - Henry County Fair,2022-10-03,"Mcdonough, GA",United States—Georgia,20221001081826
+uga,ebde8ed8-fcd8-4fa3-9a2f-c82007236143,Roswell High School,2022-10-03,"Roswell, GA",United States—Georgia,20221001081826
 uga,8236fe08-5d92-43e0-823a-ffb754ce7f9e,Centennial High School,2022-10-03,"Roswell, GA",United States—Georgia,20221001081826
 uga,f35d945d-4d35-4491-a86e-7fb4e310e7a2,Northview High School,2022-10-03,"Duluth, GA",United States—Georgia,20221001081826
 uga,95553bbe-1017-4029-ac50-a253e83931c1,Perry High School College Engagement Program with Deborah Roberts & Friends,2022-10-01,"Perry, GA",United States—Georgia,20221001081826
-uga,ebde8ed8-fcd8-4fa3-9a2f-c82007236143,Roswell High School,2022-10-03,"Roswell, GA",United States—Georgia,20221001081826
+uga,50c60f5e-ecf6-4ad0-abf1-42faf6ea9ee9,PROBE - Henry County Fair,2022-10-03,"Mcdonough, GA",United States—Georgia,20221001081826
 uga,09fcd441-a2ee-4540-b9f6-51723b10f944,Choate Fall College Fair,2022-10-10,"Wallingford, CT",United States—Connecticut,20221001081826
 uga,ecfdb8e6-b155-498e-a76a-f821b4702e74,St. Albans School College Mini-Fair,2022-10-06,"Washington, DC",United States—District of Columbia,20221001081826
 uga,5e174ad5-77f8-4622-9f08-a6b8062840c9,"Arkansas School for Mathematics, Sciences, and the Arts",2022-10-12,,Online,20221001081826
@@ -95,17 +228,72 @@ uga,61dddd13-db05-427b-95a8-2a06312e0f92,Stephenson High School College Fair,202
 uga,e8d6e74d-e6f4-48fe-8070-7e388bbbceab,Southwest DeKalb High School College Fair,2022-11-03,"Decatur, GA",United States—Georgia,20221025015648
 uga,2cd1e876-22ec-4e9a-9e7b-ea58903a22d4,PROBE - Macon Fair,2022-11-02,"Macon, GA",United States—Georgia,20221025015648
 uga,0ec39ba1-2b5e-4d06-b0de-c34d961e67a8,PROBE - Greene County Fair,2022-11-01,"Greensboro, GA",United States—Georgia,20221025015648
-uga,a5b908b0-b3d7-44f7-b5c7-f2fbf21c5f61,Hillgrove High School,2022-10-26,,Online,20221025015648
+uga,b0018195-b05a-4f8b-a8f7-fe2223d9b8e8,Lake Forest High School,2022-10-25,,Online,20221025015648
 uga,9ea5e2af-a334-4378-8a6b-ad9cb1558686,PROBE - Columbus Fair,2022-10-27,"Columbus, GA",United States—Georgia,20221025015648
 uga,a038b1dc-6458-4918-8efe-a63d6b4c1ac7,Cedar Shoals High School College Essay Workshop,2022-10-26,"Athens, GA",United States—Georgia,20221025015648
 uga,60ddb2f3-0ec4-4455-818d-364bbb5bb2ea,Arabia Mountain High School,2022-10-25,"Lithonia, GA",United States—Georgia,20221025015648
 uga,938eb350-7477-4e77-a958-dc5d307c6727,College Fair,2022-10-25,"Stonecrest, GA",United States—Georgia,20221025015648
 uga,fcb90548-df0e-4e04-a791-36d51560791d,Anderson High School,2022-11-03,,Online,20221025015648
 uga,f2864054-fec0-41cb-a967-91c001b244f7,Alonso High School,2022-10-28,,Online,20221025015648
+uga,a5b908b0-b3d7-44f7-b5c7-f2fbf21c5f61,Hillgrove High School,2022-10-26,,Online,20221025015648
 uga,2de9c957-2f63-4a8b-b190-44bc64f8acd7,Haas Hall,2022-10-25,,Online,20221025015648
-uga,b0018195-b05a-4f8b-a8f7-fe2223d9b8e8,Lake Forest High School,2022-10-25,,Online,20221025015648
 uga,8bd151c7-ee68-4d10-b047-d23a3a43ebcd,PROBE - LaGrange Fair,2022-10-28,"Lagrange, GA",United States—Georgia,20221025015648
+uga,e66dc71e-acc0-4eb6-b0e5-bfb2826f6fc1,23rd annual Latino Youth Leadership Conference,2022-12-03,"Atlanta, GA",United States—Georgia,20221127130722
 uga,a3095114-4ca4-4763-b8d6-4e18fe28b7ab,Clarke Central College and Career Fair,2022-11-30,"Athens, GA",United States—Georgia,20221127130722
+uga,23eee3f7-5a02-4718-9e47-24cf58f4d153,St. Paul VI Catholic High School Spring College night,2023-03-09,"Chantilly, VA",United States—Virginia,20230104100404
+uga,14e1a316-4325-4b37-bf72-affd5d1f37b1,McLean’s Junior Focus Day and College Spring Panel,2023-03-08,"Mclean, VA",United States—Virginia,20230104100404
+uga,1c09074c-ff97-4701-a2f0-ba31a1ce7ba7,McLean’s Junior Focus Day and College Spring Panel,2023-03-08,"Mclean, VA",United States—Virginia,20230104100404
+uga,a32142cd-dd30-4314-92b9-203d643769d4,Asheville Independent School College Fair,2023-03-20,"Asheville, NC",United States—North Carolina,20230104100404
+uga,fad3d085-9652-450c-b34a-d0e6281db677,NACAC New Jersey,2023-03-08,"Edison, NJ",United States—New Jersey,20230104100404
+uga,7e65fdb1-8ad1-4734-a117-f0f753448296,Walter Johnson HS College Saturday,2023-02-25,"Bethesda, MD",United States—Maryland,20230104100404
+uga,6b15160a-e9ec-41ae-af5d-050097402411,Langley High School Junior Night,2023-03-07,"Mclean, VA",United States—Virginia,20230104100404
+uga,97cb45d1-723a-4e7b-84c7-95b14e96b7e0,Our Lady of Good Counsel High School Junior College Night,2023-01-19,"Olney, MD",United States—Maryland,20230104100404
+uga,b23e58fa-89f4-4f89-a7b8-1172289b556d,College Days in the District (CDOTP),2023-01-25,"Bethesda, MD",United States—Maryland,20230104100404
+uga,56983414-f3db-46f3-9c38-8278513b7075,Woodward Academy Junior Parent Program,2023-01-12,,Online,20230104100404
+uga,507de424-c4a2-4a70-a762-a92cfa62c544,Capital Case Studies at St. Albans School,2023-02-06,"Washington, DC",United States—District of Columbia,20230104100404
+uga,a2ee1d48-d3a4-494a-97ea-1e6c9290ac4f,Capital Case Studies at Sidwell Friends School,2023-02-07,"Washington, DC",United States—District of Columbia,20230104100404
+uga,7fe1ca70-932e-4473-a25c-df08ea20955d,The Stonehaven School,2023-03-08,,Online,20230104100404
+uga,fab97df8-1d4b-48f6-9cd8-47a109d88acc,spring NOHS Dual Enrollment Night,2023-01-19,"Bogart, GA",United States—Georgia,20230104100404
+uga,d1de20b4-92e7-4772-9539-50cb3c0599af,2023 Atlanta Invitational Case Studies,2023-02-05,"Norcross, GA",United States—Georgia,20230104100404
+uga,5de6fb7f-88ba-4cdd-a3d9-2ef4188a65a1,NACAC Atlanta,2023-03-22,"College Park, GA",United States—Georgia,20230104100404
+uga,7ec330cf-1b24-4d2d-b437-122fff54fa6e,St. John’s College High School Annual College Fair,2023-03-15,"Washington, DC",United States—District of Columbia,20230104100404
+uga,9c339b70-d145-419d-8dee-3e56cdbcc101,Leman Manhattan College Fair,2023-04-26,"New York, NY",United States—New York,20230326214736
+uga,58a4ff9a-4b02-4509-bfda-1c66060c34dc,Greenhill School,2023-04-18,"Addison, TX",United States—Texas,20230326214736
+uga,f29a3e3d-7ccf-4a9f-b24e-546b7208c7e4,Dallas College Previews Fair,2023-04-16,"Dallas, TX",United States—Texas,20230326214736
+uga,5cbe66e1-f259-4db5-b5c5-2a2823a04137,Bishop Lynch High School,2023-04-17,"Dallas, TX",United States—Texas,20230326214736
+uga,21de52e1-ef0d-4753-92d7-5f3f4f6be889,Allen High School,2023-04-18,"Allen, TX",United States—Texas,20230326214736
+uga,821894a6-05d6-4864-a9dc-d5d2ed6363cd,EducationUSA Fair - Toronto,2023-05-13,"Toronto, ON",Canada—Ontario,20230326214736
+uga,650b128f-7ff0-40aa-9700-83a1077ac54c,Ursuline Academy,2023-04-18,"Dallas, TX",United States—Texas,20230326214736
+uga,48c576b6-724c-45c5-b271-f54d5a21d162,Parish Episcopal School,2023-04-18,"Dallas, TX",United States—Texas,20230326214736
+uga,3253ba38-fdb9-4bb5-876e-c0300a6de644,"Yorktown High School ""What does admissions look for in an applicant?""",2023-04-13,"Arlington, VA",United States—Virginia,20230326214736
+uga,30c300a4-b81a-4128-a8db-e6050db55680,All Saints Episcopal School,2023-04-19,"Fort Worth, TX",United States—Texas,20230326214736
+uga,cb7cfbae-7657-46bc-9060-38e3cda6cec2,Middleburg College Fair,2023-04-05,"Middleburg, VA",United States—Virginia,20230326214736
+uga,61b28035-67ec-47e3-ab7f-2b7a5c92b812,WAIS College Fair St. Stephen's & St. Agnes & Flint Hill,2023-04-10,"Oakton, VA",United States—Virginia,20230326214736
+uga,8203318a-b729-4b5b-8b53-66abc0992243,WAIS Madeira School,2023-04-14,"Mclean, VA",United States—Virginia,20230326214736
+uga,0fae6e15-45c1-4963-9be6-1a87b8c00b20,Richmond Area Independent Schools College Fair,2023-04-20,"Richmond, VA",United States—Virginia,20230326214736
+uga,1a2181da-5884-4c3e-bb12-3d8b23d26b22,EducationUSA - Ottawa,2023-05-11,"Ottawa, ON",Canada—Ontario,20230326214736
+uga,c5105169-8733-4a43-a5ff-45f7ef1cf93b,SEC Spring Tour 2023 - Las Vegas,2023-04-20,"Las Vegas, NV",United States—Nevada,20230326214736
+uga,de706a8b-9a0b-4c6c-96fd-f0556838d6a1,Trinity Valley School,2023-04-19,"Fort Worth, TX",United States—Texas,20230326214736
+uga,dfd1088f-f998-4a93-bfba-c48771d176ab,NACAC Boston,2023-05-02,"Boston, MA",United States—Massachusetts,20230326214736
+uga,de8dcd9f-adb2-4b52-b820-8274a8fbde3d,Our Lady of Good Counsel High School College Fair,2023-03-27,"Olney, MD",United States—Maryland,20230326214736
+uga,a1f9d135-c2bf-4f80-9a45-88fdb936917c,WAIS Spring College Fair at CESJDS-Upper School,2023-04-17,"Rockville, MD",United States—Maryland,20230326214736
+uga,1ec2354c-44ec-4d59-a8f2-a1add74af924,"2023 SEC Spring College Tour Mesa, Arizona",2023-04-18,"Mesa, AZ",United States—Arizona,20230326214736
+uga,0fbfdcb4-9d19-4f2e-9517-957caccdbe74,SEC Spring Tour 2023 - Phoenix,2023-04-18,"Mesa, AZ",United States—Arizona,20230326214736
+uga,6a668ba0-7dc5-4c19-9fef-0ecf1473125b,NACAC Montgomery County,2023-04-18,"Boyds, MD",United States—Maryland,20230326214736
+uga,5bff232c-d1ea-4362-82ae-835908c555dc,WAIS Field School College Fair,2023-04-11,"Washington, DC",United States—District of Columbia,20230326214736
+uga,7acdc66b-13ff-4633-907a-af579c30384d,WAIS National Cathedral School,2023-04-12,"Washington, DC",United States—District of Columbia,20230326214736
+uga,453d4194-5073-4519-bb42-23e6206af505,WAIS Georgetown Visitation,2023-04-17,"Washington, DC",United States—District of Columbia,20230326214736
+uga,321f04d8-5123-4c37-b2d7-5137e178978e,Mill Creek Probe Fair,2023-03-29,"Hoschton, GA",United States—Georgia,20230326214736
+uga,8236fba6-8806-45c1-850e-ceea7c309167,SEC Spring Tour 2023 - Phoenix,2023-04-19,"Phoenix, AZ",United States—Arizona,20230326214736
+uga,ad61a34f-555a-4eec-a572-9916c1602bef,Cedar Shoals High School Decision Day,2023-04-27,"Athens, GA",United States—Georgia,20230326214736
+uga,21ddb4d8-7eb2-4d66-ace5-d0e6c514d8e4,An Afternoon with UGA,2023-05-21,"Atlanta, GA",United States—Georgia,20230326214736
+uga,bb4ae3ea-59b0-4299-8b0d-01bd412548a3,2023 Health Careers Youth Conference,2023-06-15,"Athens, GA",United States—Georgia,20230326214736
+uga,da89d488-f322-4661-a48e-45d9aa13b9e5,WAIS Holton-Arms Commonwealth Academy and Landon,2023-04-11,"Bethesda, MD",United States—Maryland,20230326214736
+uga,cd98beef-c6a4-4bc3-90b8-ef354cc5f09b,WAIS Washington Area Independent College Fair,2023-04-12,"N Bethesda, MD",United States—Maryland,20230326214736
+uga,723b0540-b853-4d57-8694-5688b0c69c87,Mini College Fair for Bullis and St. Andrews,2023-04-13,"Potomac, MD",United States—Maryland,20230326214736
+uga,918cd3f9-e9ca-46da-bddd-c3831392c0be,Association of Independent Maryland and DC Schools (AIMS) College Fair,2023-04-16,"Baltimore, MD",United States—Maryland,20230326214736
+uga,4ae7be5a-f0ab-4309-b3cc-737d8832bed8,Evening with UGA - Mount Paran Christian School,2023-04-24,"Kennesaw, GA",United States—Georgia,20230326214736
+uga,aa549979-fc1f-4954-ae7b-d74a40a25eb3,Governor's Honors Program College & Career Fair 2023,2023-07-06,"Statesboro, GA",United States—Georgia,20230624101444
 uga,236453cb-4d00-4e2f-8ca5-6947655299f7,Saint Joseph Academy,2023-10-05,,Online,20231004232300
 uga,423fe81b-cf53-4873-92ff-322b39e07618,PROBE - Salem High School Fair,2023-10-13,"Conyers, GA",United States—Georgia,20231004232300
 uga,ecc3200b-5b70-44e2-a4cc-fe6979500342,PROBE - Rockdale County Fair,2023-10-13,"Conyers, GA",United States—Georgia,20231004232300
@@ -123,17 +311,17 @@ uga,38447351-4722-4d6d-969f-250b834d31b1,Northview High School,2023-10-05,"Johns
 uga,39003ce8-97b9-4e46-b0ac-62932c7e5b75,Heritage School,2023-10-05,"Newnan, GA",United States—Georgia,20231004232300
 uga,fb6fcd60-7d03-404a-b5d1-a7d5a42c28c4,Kings Ridge Christian School,2023-10-05,"Alpharetta, GA",United States—Georgia,20231004232300
 uga,4777fba9-7c48-4051-805d-9e16f2fc7f4e,North Clayton High School College Fair,2023-10-18,"College Park, GA",United States—Georgia,20231004232300
-uga,ef79f577-6568-4ba0-a0e2-0e48b373421e,Franklin County High School,2023-10-05,"Carnesville, GA",United States—Georgia,20231004232300
 uga,8eb823bf-3959-4943-95eb-69abd06a9a23,PROBE - Fayette Fair,2023-10-25,"Tyrone, GA",United States—Georgia,20231004232300
 uga,14f47729-dc17-4b74-bab2-c689d960c7e0,Connelly School Holy Child,2023-10-05,"Potomac, MD",United States—Maryland,20231004232300
+uga,be9ebe9e-645e-4ebe-b0a9-4639f69bfa65,Woodberry Forest School,2023-10-06,"Woodberry For, VA",United States—Virginia,20231004232300
+uga,b35cb59f-4b46-455d-b7b7-658a04341e08,Victoria College & Area High School College Fair,2023-10-10,"Victoria, TX",United States—Texas,20231004232300
 uga,df7fa2aa-0488-4485-b749-d71693e3693a,Apex Friendship High School,2023-10-13,"Apex, NC",United States—North Carolina,20231004232300
 uga,e38c04a9-c0f8-43a1-86bd-e45c1af60313,Riverside High School,2023-10-13,"Durham, NC",United States—North Carolina,20231004232300
-uga,ff6259a8-ba6f-439f-bf45-b5255995d0bd,St. David's School,2023-10-12,"Raleigh, NC",United States—North Carolina,20231004232300
 uga,b2d77fe2-60f0-4b76-b2a1-fc114c6101aa,Ravenscroft School,2023-10-12,"Raleigh, NC",United States—North Carolina,20231004232300
 uga,b5a454a3-c5fa-4133-a70b-0eaa9ab724da,Leesville Road High School,2023-10-12,"Raleigh, NC",United States—North Carolina,20231004232300
 uga,53da8952-bd9c-47d2-a939-612d79043612,Saint Mary's School,2023-10-11,"Raleigh, NC",United States—North Carolina,20231004232300
+uga,ef79f577-6568-4ba0-a0e2-0e48b373421e,Franklin County High School,2023-10-05,"Carnesville, GA",United States—Georgia,20231004232300
 uga,83fee7c9-aa21-4fd4-8a16-be319707aa6c,Enloe Magnet High School,2023-10-11,"Raleigh, NC",United States—North Carolina,20231004232300
-uga,e8aad062-1e74-40d1-af57-4b845ff2cc32,Broughton High School,2023-10-11,"Raleigh, NC",United States—North Carolina,20231004232300
 uga,f23da46b-46a2-4037-9c72-c4865969aaac,Carrboro High School,2023-10-10,"Carrboro, NC",United States—North Carolina,20231004232300
 uga,ef66ca1f-b45e-4a4b-8924-d745c1252cfa,East Chapel Hill High School,2023-10-10,"Chapel Hill, NC",United States—North Carolina,20231004232300
 uga,0391731d-c533-48fc-a179-8300273e112c,Chapel Hill High School,2023-10-10,"Chapel Hill, NC",United States—North Carolina,20231004232300
@@ -141,13 +329,14 @@ uga,3d71a4a1-29cf-4f5d-b6c2-c3e610237c85,Durham Academy Upper School,2023-10-10,
 uga,ec1c11db-3ae8-49f3-a5e6-46c40201a80a,Green Level High School,2023-10-10,"Cary, NC",United States—North Carolina,20231004232300
 uga,b7dc9a27-c6e5-473b-b4db-fe07b5187437,Raleigh Charter High School,2023-10-09,"Raleigh, NC",United States—North Carolina,20231004232300
 uga,04cc64c3-a645-4b8a-b0c0-d356044feccc,Our Lady Of Good Counsel HS,2023-10-05,"Olney, MD",United States—Maryland,20231004232300
+uga,e8aad062-1e74-40d1-af57-4b845ff2cc32,Broughton High School,2023-10-11,"Raleigh, NC",United States—North Carolina,20231004232300
 uga,393452eb-899e-42f6-89d2-2d135a881c03,Centennial High School,2023-10-05,"Roswell, GA",United States—Georgia,20231004232300
-uga,03910db9-333d-4464-8ebd-831bf835d273,Fall 2023 Strong Rock Christian School College Fair,2023-10-05,"Locust Grove, GA",United States—Georgia,20231004232300
+uga,ff6259a8-ba6f-439f-bf45-b5255995d0bd,St. David's School,2023-10-12,"Raleigh, NC",United States—North Carolina,20231004232300
 uga,cc83369c-022f-4104-a2ea-ccb838a48361,The Weber School,2023-10-05,"Atlanta, GA",United States—Georgia,20231004232300
 uga,98b7111a-629b-428c-802e-3516ce3c89a0,St. Martin's Episcopal School,2023-10-10,,Online,20231004232300
 uga,bb8ff819-5e71-4e0f-90dc-fd4593a6cecc,Appling County High School,2023-10-10,,Online,20231004232300
 uga,90b4e908-4707-4b40-a53c-523ca53e39c3,Porter-Gaud School,2023-10-10,,Online,20231004232300
-uga,a7463fab-7365-4d8d-8ebd-ad16f9223e05,Ben Lippen School,2023-10-10,,Online,20231004232300
+uga,03910db9-333d-4464-8ebd-831bf835d273,Fall 2023 Strong Rock Christian School College Fair,2023-10-05,"Locust Grove, GA",United States—Georgia,20231004232300
 uga,45fb59fb-8c44-4035-82a6-e671ef99b118,Dunwoody High School,2023-10-10,,Online,20231004232300
 uga,7d24e49b-9905-41aa-8f78-59848bc5cf64,Wando High School,2023-10-10,,Online,20231004232300
 uga,6e554e78-a8e0-4510-99bd-5608078fe382,Episcopal Collegiate School,2023-10-10,,Online,20231004232300
@@ -161,17 +350,17 @@ uga,570e77da-f810-4b30-9e3d-80589b6b559f,Trinity Hall,2023-10-05,,Online,2023100
 uga,5bc0656b-ab23-4b32-9e41-4aca3dd60819,Ware County High School,2023-10-05,,Online,20231004232300
 uga,a6e4ee18-58b0-4a5c-bdf9-48814b04d22e,Charlton County High School,2023-10-10,,Online,20231004232300
 uga,8ac8fd1a-664c-4b0c-b90e-81d2724ad369,Warren County High School,2023-10-11,,Online,20231004232300
-uga,31d8c086-8c72-4dd5-b497-b9e4d139a30b,Half Hollow Hills HS East,2023-10-11,,Online,20231004232300
+uga,a7463fab-7365-4d8d-8ebd-ad16f9223e05,Ben Lippen School,2023-10-10,,Online,20231004232300
 uga,e5e87357-cccd-4aa3-9b33-ccd4d8a8ac32,Al-Falah Academy,2023-10-13,,Online,20231004232300
 uga,0115a2ef-cdf2-448e-9298-45bcb3cef47b,St. Albans School College Mini-Fair,2023-10-05,"Washington, DC",United States—District of Columbia,20231004232300
 uga,759158c9-e8a0-4c86-8f5f-954a7abd2702,Mater Dei College And Career Night,2023-10-18,"Santa Ana, CA",United States—California,20231004232300
-uga,eafdd1c2-5b76-46fd-bf9e-6ebc73273423,Marymount High School,2023-10-18,"Los Angeles, CA",United States—California,20231004232300
+uga,31d8c086-8c72-4dd5-b497-b9e4d139a30b,Half Hollow Hills HS East,2023-10-11,,Online,20231004232300
 uga,8c7827fc-0666-4fe4-a6f0-024c3ef156e0,Brentwood School,2023-10-18,"Los Angeles, CA",United States—California,20231004232300
 uga,6109640c-d6b9-42d9-9ec7-49614edf8e93,Harvard-Westlake Upper School,2023-10-18,"Studio City, CA",United States—California,20231004232300
 uga,d2b51ba0-2c99-41b9-95a8-6ed115eab0f4,Windward School,2023-10-18,"Los Angeles, CA",United States—California,20231004232300
 uga,54e14f1b-4f67-4a6c-b836-472f46c1882d,Sage Hill School,2023-10-17,"Newport Coast, CA",United States—California,20231004232300
-uga,b35cb59f-4b46-455d-b7b7-658a04341e08,Victoria College & Area High School College Fair,2023-10-10,"Victoria, TX",United States—Texas,20231004232300
 uga,f6c98c0c-66ac-4613-ad20-f3a0709a1e33,Corona Del Mar HS,2023-10-17,"Newport Beach, CA",United States—California,20231004232300
+uga,eafdd1c2-5b76-46fd-bf9e-6ebc73273423,Marymount High School,2023-10-18,"Los Angeles, CA",United States—California,20231004232300
 uga,e7a4f4b6-25e5-4e71-9882-9b9386c3c152,Palos Verdes High School,2023-10-16,"Pls Vrds Est, CA",United States—California,20231004232300
 uga,2521da8f-ddd7-499f-97a1-8a59188e70f3,Santa Margarita Catholic High School,2023-10-12,"Rcho Sta Marg, CA",United States—California,20231004232300
 uga,d95c1c8a-63c4-4bbf-815c-5b276f776a1a,Alexander High School,2023-11-06,,Online,20231004232300
@@ -180,7 +369,35 @@ uga,53e15ef1-bca3-4714-a9af-a674a64ea779,EducationUSA Sub-Saharan Africa Virtual
 uga,31c21805-0ff3-4bc9-b242-c2d1e21fb00e,Campus High School,2023-10-16,,Online,20231004232300
 uga,446dff31-0598-4486-ab03-3c84bad350f9,Frederica Academy,2023-10-13,,Online,20231004232300
 uga,0747bd6e-ed7a-4b1e-9844-212b25859435,Chadwick School,2023-10-16,"Pls Vrds Pnsl, CA",United States—California,20231004232300
-uga,be9ebe9e-645e-4ebe-b0a9-4639f69bfa65,Woodberry Forest School,2023-10-06,"Woodberry For, VA",United States—Virginia,20231004232300
+uga,3a5f72e4-468a-4ea7-afb1-3cf8ecffeda0,Chattahooche High School,2024-03-14,"Johns Creek, GA",United States—Georgia,20240222111418
+uga,85d536b7-6378-4b5a-b275-fa33949cbb43,Innovation Academy,2024-03-14,"Alpharetta, GA",United States—Georgia,20240222111418
+uga,4887208e-8e7d-4eba-bea2-b7ce0fdc0015,Cristo Rey Atlanta Jesuit High School College Fair,2024-03-14,"Atlanta, GA",United States—Georgia,20240222111418
+uga,35f47d4a-39a0-4737-9910-b7227b0fbcbc,Clarke Central High School College and Career Fair,2024-03-20,"Athens, GA",United States—Georgia,20240222111418
+uga,c8b8b65c-d3c4-41c0-9250-cd4d9e86ae65,PROBE - Parkview High School Fair,2024-03-21,"Lilburn, GA",United States—Georgia,20240222111418
+uga,36245a6e-489f-4425-91fb-1161a22227c3,Evening with UGA - Mount Paran Christian School,2024-04-29,"Kennesaw, GA",United States—Georgia,20240222111418
+uga,68b3e2d5-da11-4d5e-9846-d7fe5b0f8b2f,PROBE - North East Georgia Fair,2024-03-26,"Demorest, GA",United States—Georgia,20240222111418
+uga,d84a0e66-9211-41f8-ad8c-d3a9d2f57040,PROBE - Mill Creek High School Fair,2024-03-27,"Hoschton, GA",United States—Georgia,20240222111418
+uga,9c085a48-c657-44db-a7c9-9d06f3be2048,Our Lady of Good Counsel High School College Fair,2024-03-25,"Olney, MD",United States—Maryland,20240222111418
+uga,ba133410-2aa8-4808-8f44-fe130e1af546,Princeton Area Secondary Schools College Fair,2024-04-16,"Princeton, NJ",United States—New Jersey,20240222111418
+uga,65ba9e25-b0ad-4bec-9cad-0631fcfff131,PROBE - West Cobb QUEST Fair,2024-03-25,"Kennesaw, GA",United States—Georgia,20240222111418
+uga,16d8b265-6670-4341-98e2-c4224478014a,The HoPe Leadership Conference: GO!,2024-03-09,"Duluth, GA",United States—Georgia,20240222111418
+uga,051558d7-586f-4deb-a73b-edbd2bc2ebd7,Atlanta Jewish Academy,2024-03-13,"Atlanta, GA",United States—Georgia,20240222111418
+uga,f5777331-3efe-4f4b-a8a1-a1d1156c3bc3,PROBE - Barrow Arts & Science Academy Fair,2024-03-07,"Winder, GA",United States—Georgia,20240222111418
+uga,3e2935b2-17ec-45af-ad53-30c73d0f8ff1,PROBE - Columbia County Chamber Fair,2024-03-07,"Grovetown, GA",United States—Georgia,20240222111418
+uga,0ce8b50b-9f93-4120-9784-efe848acc213,St. John's College (SJC) High School Fair,2024-03-13,"Washington, DC",United States—District of Columbia,20240222111418
+uga,a27bba43-c39e-4a8d-9cc2-27d66ad5678e,PROBE - Paul Duke STEM Fair,2024-02-23,"Norcross, GA",United States—Georgia,20240222111418
+uga,ec4de8d6-a848-4d92-bb6f-abe8eebaca17,Riverwood Spring College and Career Fair,2024-02-28,"Sandy Springs, GA",United States—Georgia,20240222111418
+uga,4934a1e1-b746-4b5f-9796-b54034d713a2,Communities in Schools Atlanta College Fair,2024-03-01,"Atlanta, GA",United States—Georgia,20240222111418
+uga,7f1162a0-750f-4397-9e66-db223d5f8a70,Centennial High School,2024-03-05,"Roswell, GA",United States—Georgia,20240222111418
+uga,36b6afa5-b643-4ccf-afc8-fdfe5f3223f8,Clarke Central High School,2024-03-01,"Athens, GA",United States—Georgia,20240222111418
+uga,6fecb4aa-dc26-4413-ba07-4916596893d5,Alpharetta High School,2024-03-05,"Alpharetta, GA",United States—Georgia,20240222111418
+uga,70a2b540-abc4-4b7a-b114-eee493655297,Mountain View High School,2024-03-05,"Lawrenceville, GA",United States—Georgia,20240222111418
+uga,082e7ce0-ff51-4c7f-8037-8a93840a7c4a,Seckinger High School,2024-03-05,"Buford, GA",United States—Georgia,20240222111418
+uga,9ef0fd24-448f-43de-89b6-569fc22acada,Grayson High School,2024-03-06,"Loganville, GA",United States—Georgia,20240222111418
+uga,9e1de049-a14e-4011-964e-0589ce280210,Walton High School College Fair,2024-03-06,"Marietta, GA",United States—Georgia,20240222111418
+uga,f41fe02b-caa9-4245-b3a5-b90542636af0,Collins Hill High School,2024-03-05,"Suwanee, GA",United States—Georgia,20240222111418
+uga,fbb64036-bde6-4d33-b896-42dd1c3e4ee0,Bluffton High School,2024-05-13,"Bluffton, SC",United States—South Carolina,20240510232219
+uga,53d62b1c-afd5-436e-87b4-25e5da4a55c6,Hilton Head Island High School,2024-05-21,"Hilton Head, SC",United States—South Carolina,20240510232219
 uga,16d30a89-446c-4f56-b7ae-51311e131e8a,The Altamont School,2024-09-09,,Online,20240829103810
 uga,fb43fc00-e46a-4a73-b935-69b8bcd57b87,Severna Park Senior HS,2024-10-16,"Severna Park, MD",United States—Maryland,20240829103810
 uga,1666378d-ae42-43e1-a3d8-7154073781d4,Archbishop Spalding HS,2024-10-15,"Severn, MD",United States—Maryland,20240829103810
@@ -268,6 +485,7 @@ uga,a4ceb54e-4603-4bde-b660-84f352e49f1e,Glenbrook South High School,2024-09-16,
 uga,87e201eb-e71f-4e72-902b-bb8e62e990eb,Deerfield High School Visit,2024-09-16,"Deerfield, IL",United States—Illinois,20240829103810
 uga,3b9fa3c9-8928-4cd4-9b4e-8e725b97dc29,Barrington High School,2024-09-16,"Barrington, IL",United States—Illinois,20240829103810
 uga,50b1cf5e-29ba-41cf-a036-92f1d51c31c1,Adlai E Stevenson High School,2024-09-16,"Lincolnshire, IL",United States—Illinois,20240829103810
+uga,d3bbb79f-bb88-48b9-8412-e2b8f586a8bf,Clayton County Public Schools School Choice and College Fair,2025-03-15,"Morrow, GA",United States—Georgia,20240829103810
 uga,039b6e28-8e77-4877-ac71-31a344bd44a3,Hampton High School,2024-10-10,"Hampton, GA",United States—Georgia,20240829103810
 uga,66d932f7-727d-4df3-a1e2-222f58282fd2,Blessed Trinity Catholic High School,2024-10-10,"Roswell, GA",United States—Georgia,20240829103810
 uga,527d906a-c252-4bee-8dda-0adf839ac8a3,McDonough High School,2024-10-10,"Mcdonough, GA",United States—Georgia,20240829103810
@@ -343,6 +561,8 @@ uga,bf7ee67c-ae3a-4572-8cba-280daedeef87,Christ Church Episcopal School,2024-09-
 uga,9e00ad1d-db40-45e4-b421-2b6905cefa1a,St. Joseph's Catholic School,2024-09-09,"Greenville, SC",United States—South Carolina,20240829103810
 uga,100339ef-266f-41da-83a1-1e491799385f,Battle Ground Academy,2024-09-11,"Franklin, TN",United States—Tennessee,20240829103810
 uga,8b60fada-5d88-4f39-bb81-78a3a208ec71,Knox County College Fair,2024-09-24,"Knoxville, TN",United States—Tennessee,20240829103810
+uga,0082bfc4-90ec-45ba-b987-5cd44ef31104,Allen High School,2024-08-29,"Allen, TX",United States—Texas,20240829103810
+uga,123fefa1-d670-471f-894a-7811f15c30a3,St. Mark's School of Texas,2024-08-29,"Dallas, TX",United States—Texas,20240829103810
 uga,2f818ba6-4d44-4afc-8501-9e99623b9744,James Bowie High School,2024-09-12,"Austin, TX",United States—Texas,20240829103810
 uga,b08220c9-5a4a-481e-9bc0-7a0f5a2a20a2,Vandegrift High School,2024-09-12,"Austin, TX",United States—Texas,20240829103810
 uga,d37ebdab-7598-4bd3-a491-57e4e52ed753,Anderson High School,2024-09-12,"Austin, TX",United States—Texas,20240829103810
@@ -359,6 +579,10 @@ uga,cd6d3a38-7fb3-465a-8752-a15a6ce6c9db,St. Andrew's Episcopal School,2024-09-1
 uga,e7547c18-4aca-4264-9ca3-9223927642b8,St. Dominic Savio Catholic High School,2024-09-09,"Austin, TX",United States—Texas,20240829103810
 uga,30e5560f-5f06-4f38-a99e-856f54e21ab5,Leander High School,2024-09-09,"Leander, TX",United States—Texas,20240829103810
 uga,da90b7b7-b836-452d-8818-fe2f02be5e6a,Cedar Park High School,2024-09-09,"Cedar Park, TX",United States—Texas,20240829103810
+uga,56a1d428-02f9-4018-8d14-562b97e69d97,Carroll Senior High School,2024-08-30,"Southlake, TX",United States—Texas,20240829103810
+uga,4469010b-ee60-455c-b94c-724d01f40711,Episcopal School of Dallas Pk,2024-08-30,"Dallas, TX",United States—Texas,20240829103810
+uga,f43df337-bf42-488b-bff7-f3dbd0510891,Uplift Infinity Preparatory,2024-08-30,"Irving, TX",United States—Texas,20240829103810
+uga,fe472354-f9c3-4357-8e3a-e9506260bf4f,The Parish Episcopal School Pk,2024-08-29,"Dallas, TX",United States—Texas,20240829103810
 uga,85340b33-636e-4288-911d-37bd5007c8d0,Round Rock High School,2024-09-10,"Round Rock, TX",United States—Texas,20240829103810
 uga,30387570-00ce-4b38-a41d-16bd8c6a61ef,Vidalia High School,2024-09-24,"Vidalia, GA",United States—Georgia,20240829103810
 uga,c2dcfec9-7804-4555-8bc8-ec7bed73d58e,Troup County HS,2024-09-24,"Lagrange, GA",United States—Georgia,20240829103810
@@ -375,6 +599,13 @@ uga,5e784ed0-500d-46c7-8353-9dc695bc6997,North Cobb Christian School,2024-09-03,
 uga,8d1b2d56-164f-41d1-9341-857bdcb86a8b,Savannah Christian Preparatory School,2024-09-03,"Savannah, GA",United States—Georgia,20240829103810
 uga,1b775d05-4f05-4504-95fd-049cf2ea2faf,Denmark High School,2024-09-03,"Alpharetta, GA",United States—Georgia,20240829103810
 uga,bf42fdc2-75e4-4d9e-a569-de8db40f54de,Calvary Day School,2024-09-03,"Savannah, GA",United States—Georgia,20240829103810
+uga,43d1ffc7-9148-43bb-8eb3-ee8489efdb51,Central Gwinnett High School,2024-08-30,"Lawrenceville, GA",United States—Georgia,20240829103810
+uga,56dd6dc7-f95d-4b07-832f-c363873e9f29,McClure Health Science High School,2024-08-30,"Duluth, GA",United States—Georgia,20240829103810
+uga,533e79cb-5b44-4bdc-a180-d0e2c4078fda,Innivation Academy GARN College Bootcamp,2024-08-30,"Alpharetta, GA",United States—Georgia,20240829103810
+uga,29d7e40a-90e7-4818-a3e4-4953f504aa69,Notre Dame Academy,2024-08-29,"Duluth, GA",United States—Georgia,20240829103810
+uga,d0b8106e-ee11-4564-b4ab-e52bebce80e8,Sprayberry Senior High School,2024-08-29,"Marietta, GA",United States—Georgia,20240829103810
+uga,60a9c0eb-3f44-48a3-bb54-ce5fbebdb67a,Bacon County High School,2024-08-29,"Alma, GA",United States—Georgia,20240829103810
+uga,83cf5ff3-e9e0-4240-ae34-6cd86f00abc2,Sequoyah High School,2024-08-29,"Canton, GA",United States—Georgia,20240829103810
 uga,5ee783a2-1586-46db-b13f-9ecc968eeb17,Mountain View High School,2024-09-04,"Lawrenceville, GA",United States—Georgia,20240829103810
 uga,e03222f7-cc80-4623-9c85-51f256646b6a,Hillgrove High School,2024-09-04,"Powder Spgs, GA",United States—Georgia,20240829103810
 uga,7f4b4e73-ee66-48d5-8c29-76256ca089ad,Savannah Country Day School,2024-09-04,"Savannah, GA",United States—Georgia,20240829103810
@@ -388,6 +619,7 @@ uga,80c3ce9a-beb6-4926-af2f-f4be376623fa,South Forsyth High School,2024-09-06,"C
 uga,6df5c595-c1cb-49d4-8729-e3ac27b7b975,Charles R Drew High School,2024-09-06,"Riverdale, GA",United States—Georgia,20240829103810
 uga,bc6dc97e-8f94-4a61-9b3b-2b47a45ab8b3,Elite Scholars Academy,2024-09-06,"Jonesboro, GA",United States—Georgia,20240829103810
 uga,2bf5aa8d-e452-4d4f-89d3-db6251d57c54,Tattnall County High School,2024-09-06,"Reidsville, GA",United States—Georgia,20240829103810
+uga,17934990-776a-429c-81c3-366605489b8e,Meadowcreek High School,2024-08-29,"Norcross, GA",United States—Georgia,20240829103810
 uga,ae644149-9445-49df-a7fb-7e42e64e6851,Future Fair Night,2024-09-05,"Woodstock, GA",United States—Georgia,20240829103810
 uga,fbe2e93e-baa7-4b13-ace4-62c51b702976,Benedictine Military College,2024-09-05,"Savannah, GA",United States—Georgia,20240829103810
 uga,bddf569d-4503-445c-8a4d-4a38a1353de6,Whitefield Academy,2024-09-05,"Mableton, GA",United States—Georgia,20240829103810
@@ -400,6 +632,8 @@ uga,19c54506-1f3d-4c0a-a1c0-692eba8734b2,Discovery High School,2024-09-05,"Lawre
 uga,d0f41323-d976-4d32-bebb-aa4ec840dded,Richmond Hill High School,2024-09-04,"Richmond Hill, GA",United States—Georgia,20240829103810
 uga,136d8255-3c6b-4ae2-a6a3-0364bce46692,Campbell High School,2024-09-05,"Smyrna, GA",United States—Georgia,20240829103810
 uga,a4f84ef3-2ace-4523-8e27-e5a761651e93,North Paulding High School,2024-09-09,"Dallas, GA",United States—Georgia,20240829103810
+uga,5740fe80-0fe1-4680-8b43-72d64c9ec006,McEachern High School,2024-08-29,"Powder Spgs, GA",United States—Georgia,20240829103810
+uga,bb178e1e-2faa-4b82-8153-e6564191bbe4,Citizens Christian Academy,2024-08-29,"Douglas, GA",United States—Georgia,20240829103810
 uga,eb708b87-6424-4178-9044-33e9a87e41a9,Bishop Kenny High School,2024-09-06,"Jacksonville, FL",United States—Florida,20240829103810
 uga,fe152702-7a25-4fe4-88bb-55baf87e1b65,Ponte Vedra High School,2024-09-05,"Ponte Vedra, FL",United States—Florida,20240829103810
 uga,de149ab5-44ba-44b4-99e0-c70ead8bb107,Paxon School for Advanced Studies,2024-09-05,"Jacksonville, FL",United States—Florida,20240829103810
@@ -432,6 +666,7 @@ uga,ee5fbf03-cfcf-4a99-9d71-5ffa4d66ebb2,Shorecrest Prepatory School,2024-10-08,
 uga,fc88dc83-d715-4c30-a70b-df0de555bc15,Clearwater Central Catholic High School,2024-10-08,"Clearwater, FL",United States—Florida,20240829103810
 uga,e2d171b1-4a52-4deb-9540-bd96427cb679,Carrollwood Day School,2024-10-08,"Tampa, FL",United States—Florida,20240829103810
 uga,27864cdc-0c4a-4560-8330-ce13a4c89aa8,Academy of the Holy Names,2024-10-08,"Tampa, FL",United States—Florida,20240829103810
+uga,4c7601c7-cf83-4c6a-8035-7209306fb57c,Jefferson County High School,2024-08-29,"Louisville, GA",United States—Georgia,20240829103810
 uga,6311a8a4-dcdd-4b14-919f-19c670c4f369,Lake Highland Preparatory School,2024-10-07,"Orlando, FL",United States—Florida,20240829103810
 uga,c8bacc61-b3a1-49a0-9325-1b93d6f33fec,Winter Park High School,2024-10-07,"Winter Park, FL",United States—Florida,20240829103810
 uga,212c9211-0391-43a6-bb58-71c583cd5326,Bishop Moore Catholic HS,2024-10-07,"Orlando, FL",United States—Florida,20240829103810
@@ -539,4 +774,93 @@ uga,d5834f62-e557-4a91-83d8-db0babebe3ff,Lanier High School,2024-09-12,"Sugar Hi
 uga,b42fdff2-49c4-4add-a4d7-13b6213935d9,Cobb County Probe Fair,2024-09-11,"Marietta, GA",United States—Georgia,20240829103810
 uga,23e1a897-5f5c-48f9-bc0f-4444e8d0ba64,Pinewood Christian Academy,2024-09-12,"Bellville, GA",United States—Georgia,20240829103810
 uga,16205328-69bd-41e0-9118-293196dedf8d,Yorktown High School,2024-10-01,"Arlington, VA",United States—Virginia,20240829103810
-uga,55f666a4-88cd-46ae-aae0-3a5c2e893cba,Clarke Central High School Dual Enrollment Night,2026-10-29,Clarke Central High School,United States - Georgia,20261029000000
+berkeley,726aa74a-fb24-4e6c-ac10-e50e029b06e5,TDCN - Santa Rosa Junior College,2022-09-06,"Santa Rosa, CA",United States—California,20220817074559
+berkeley,26e50e3f-2f09-4a89-a1c2-404862f5bc40,Perris UHSD,2022-10-27,"Menifee, CA",United States—California,20220817074559
+berkeley,b04d4310-35c1-4b03-8538-08d5410cd1e2,Mount San Jacinto College San Jacinto Campus Transfer Fair,2022-10-27,"San Jacinto, CA",United States—California,20220817074559
+berkeley,31adecfb-5958-4d86-9d5c-2fe8fe07872f,San Diego / Imperial County CAL-SOAP,2022-10-26,"San Diego, CA",United States—California,20220817074559
+berkeley,86f83a67-2fba-4fd0-8881-f7455d1c111a,Mount San Jacinto College Transfer Fair,2022-10-25,"Menifee, CA",United States—California,20220817074559
+berkeley,5166ad1d-4761-443e-b950-b63ed00532e9,TDCN - College of Marin,2022-10-24,"Kentfield, CA",United States—California,20220817074559
+berkeley,711926bc-afc6-424c-9181-d5aedfba8dec,Grossmont College Transfer Day,2022-10-19,"El Cajon, CA",United States—California,20220817074559
+berkeley,98b5d6a2-5c5e-4aea-a22e-b46ff2587ac6,San Diego City College Transfer Day,2022-10-18,"San Diego, CA",United States—California,20220817074559
+berkeley,e38aa79c-1a23-4dd6-a8e3-d5b692f45733,Victor Valley College Transfer Fair,2022-10-17,"Victorville, CA",United States—California,20220817074559
+berkeley,53659110-6378-466e-9a09-698f6ff922e4,Southwestern College Transfer Day,2022-10-17,"Chula Vista, CA",United States—California,20220817074559
+berkeley,65cb6bae-dcb1-4c8c-8126-2b5fac1f9648,Carlsbad Unified School District College & Career Fair,2022-10-13,"Carlsbad, CA",United States—California,20220817074559
+berkeley,65ecc08c-b8f7-4b31-86d0-f0a1540c8011,San Diego Mesa College Transfer Day,2022-10-13,"San Diego, CA",United States—California,20220817074559
+berkeley,ee67c4e4-972a-4c5d-a9f2-21b199690a0a,San Bernardino Valley College Transfer Fair,2022-10-12,"Sn Bernrdno, CA",United States—California,20220817074559
+berkeley,6b24954e-f2f7-440c-ae4c-19f159ce9980,Saddleback College Transfer Day,2022-10-12,"Mission Viejo, CA",United States—California,20220817074559
+berkeley,b3d6a5ac-dcd2-44dd-95de-419dde604c0c,J. Serra Catholic High School College Night,2022-10-11,"San Juan Capo, CA",United States—California,20220817074559
+berkeley,2be2f961-eb1c-4746-aa96-bf8bca21df57,Palomar College Transfer Day,2022-10-11,"San Marcos, CA",United States—California,20220817074559
+berkeley,175f0cc6-2e38-4067-8c09-5b5638330361,Chino Valley USD,2022-10-10,"Chino, CA",United States—California,20220817074559
+berkeley,2d891533-5f0f-4724-98a3-18f1d3c4a3df,UC for you - Riverside,2022-10-08,"Riverside, CA",United States—California,20220817074559
+berkeley,dd16856b-96e8-45f7-b2f7-f705df1382cc,TDCN - Sonoma County/Windsor Unified School District,2022-09-06,"Windsor, CA",United States—California,20220817074559
+berkeley,163463f9-29cc-4e40-9f7d-dfa4786691bb,Sweetwater UHSD,2022-09-07,"San Diego, CA",United States—California,20220817074559
+berkeley,9ae7b7e4-fe38-4a67-9e64-2d98c54b80fd,TDCN - Napa Valley College,2022-09-08,"Napa, CA",United States—California,20220817074559
+berkeley,063d6a8b-2862-459c-9bb5-087ce9579b50,Crafton Hills College Tranfer Fair,2022-09-14,"Yucaipa, CA",United States—California,20220817074559
+berkeley,34abc8ad-752e-4bb9-ad1f-a12c5064e682,San Diego Miramar College Transfer Day,2022-09-28,"San Diego, CA",United States—California,20220817074559
+berkeley,66ea9c95-8b01-48f2-816d-5182c142577e,Hoover High School College Night,2022-09-28,"San Diego, CA",United States—California,20220817074559
+berkeley,0217f180-cae4-4bfd-8e7e-d3c7af1e7399,Palo Verde College Transfer Fair,2022-10-31,"Blythe, CA",United States—California,20220817074559
+berkeley,1180f0df-544d-49e4-b83a-4db40dd4d9ca,Riverside City College Transfer Fair,2022-09-29,"Riverside, CA",United States—California,20220817074559
+berkeley,59315157-e9e5-40cc-ac53-be67e1eedfda,College of the Desert Transfer Fair,2022-10-03,"Palm Desert, CA",United States—California,20220817074559
+berkeley,fc24a0eb-f6c0-4c0c-9344-63ede5f5cbaf,Cuyamaca College Transfer Day,2022-10-04,"El Cajon, CA",United States—California,20220817074559
+berkeley,fb304429-a122-4003-89c6-c4d600d0211d,3rd Annual College/Career Fair at Orange Vista High School,2022-10-05,"Perris, CA",United States—California,20220817074559
+berkeley,73ac455f-b785-4e7e-88c7-ce1bb4a4ff31,Copper Mountain College Transfer Fair,2022-10-06,"Joshua Tree, CA",United States—California,20220817074559
+berkeley,cea35af8-7305-4159-a92a-2dff0c402af4,Coachella Valley Regional Coachella Valley College Fair,2022-10-06,"Rancho Mirage, CA",United States—California,20220817074559
+berkeley,b99a52d5-b2d9-4750-b645-f1b21c3e294c,Cathedral Catholic College Fair,2022-10-06,"San Diego, CA",United States—California,20220817074559
+berkeley,627543f8-9963-4bba-bc6d-c842ddb5d8ac,Riverside/Alvord/Jurupa USD,2022-09-29,"Riverside, CA",United States—California,20220817074559
+berkeley,03ff1dec-0e8c-4974-8e12-a2ca7b61fd2b,Higher Ed Week - Imperial Valley,2022-09-19,,,20220817074559
+berkeley,249b03ea-8a00-42fd-8a16-ec62f4010580,San Diego City College Spring Transfer Day,2025-04-21,"San Diego, CA",United States—California,20250418201400
+berkeley,b28ccf5d-3bc3-4f97-8d23-f87d58cea49d,SDUHSD College and Career Night,2025-04-24,"Cardiff By The Sea, CA",United States—California,20250418201400
+berkeley,d54cbd76-1c39-466d-b266-329da98e0b09,UCLA Stomp Conference,2025-05-02,"Los Angeles, CA",United States—California,20250418201400
+berkeley,f23fc66a-f7f5-4c1d-9aee-9e594cc21a6a,Northern Virginia Regional College Fair,2026-04-07,"Fairfax, VA",United States—Virginia,20260314100258
+berkeley,31c3e5c3-0f24-472d-a1d4-af246f1f8633,Public Safety Academy College Day,2026-05-22,,,20260314100258
+berkeley,97156838-6372-497b-b58b-b07c2d4afd3e,Umoja Conference 2026,2026-11-18,"Ontario, CA",United States—California,20261031000000
+berkeley,fca969f6-8d33-4b68-98fa-976556910654,"21st Annual Alpha Phi Alpha Fraternity, Inc. College Fair",2026-11-14,"Fort Washington, MD",United States—Maryland,20261031000000
+uw,2026 Fall Hockinson High School Fair|2026-11-02,2026 Fall Hockinson High School Fair,2026-11-02,"Brush Prairie, WA United States","November 02, 2026",20261031000000
+uw,2026 Fall Brewster High School Virtual Visit|2026-11-12,2026 Fall Brewster High School Virtual Visit,2026-11-12,More information,"November 12, 2026",20261031000000
+uw,2026 Fall Kalama High School Fair|2026-11-10,2026 Fall Kalama High School Fair,2026-11-10,"Kalama, WA United States","November 10, 2026",20261031000000
+uw,"2026 Fall College, Career & Financial Aid Night @ Sunnyside|2026-11-10","2026 Fall College, Career & Financial Aid Night @ Sunnyside",2026-11-10,"Sunnyside, WA United States","November 10, 2026",20261031000000
+uw,2026 Fall Camas High School Fair|2026-11-09,2026 Fall Camas High School Fair,2026-11-09,"Camas, WA United States","November 09, 2026",20261031000000
+uw,2026 Fall La Center High School Fair|2026-11-06,2026 Fall La Center High School Fair,2026-11-06,"La Center, WA United States","November 06, 2026",20261031000000
+uw,2026 Fall Delta High School Application Workshop|2026-11-06,2026 Fall Delta High School Application Workshop,2026-11-06,"Pasco, WA United States","November 06, 2026",20261031000000
+uw,2026 Fall Fort Vancouver High School Fair|2026-11-06,2026 Fall Fort Vancouver High School Fair,2026-11-06,"Vancouver, WA United States","November 06, 2026",20261031000000
+uw,2026 Fall Annie Wright School Visit|2026-11-05,2026 Fall Annie Wright School Visit,2026-11-05,"Tacoma, WA United States","November 05, 2026",20261031000000
+uw,2026 Fall Vancouver iTech Preparatory Fair|2026-11-05,2026 Fall Vancouver iTech Preparatory Fair,2026-11-05,"Vancouver, WA United States","November 05, 2026",20261031000000
+uw,2026 Fall Prescott High School Visit|2026-11-05,2026 Fall Prescott High School Visit,2026-11-05,"Prescott, WA United States","November 05, 2026",20261031000000
+uw,2026 Fall Gig Harbor HS Visit|2026-11-05,2026 Fall Gig Harbor HS Visit,2026-11-05,"Gig Harbor, WA United States","November 05, 2026",20261031000000
+uw,2026 Fall Vancouver School of Arts and Academics Fair|2026-11-05,2026 Fall Vancouver School of Arts and Academics Fair,2026-11-05,"Vancouver, WA United States","November 05, 2026",20261031000000
+uw,2026 Fall Columbia High School 4th Annual Career & College Fair|2026-11-05,2026 Fall Columbia High School 4th Annual Career & College Fair,2026-11-05,"Burbank, WA United States","November 05, 2026",20261031000000
+uw,2026 Fall Woodland High School Fair|2026-11-04,2026 Fall Woodland High School Fair,2026-11-04,"Woodland, WA United States","November 04, 2026",20261031000000
+uw,2026 Fall Overlake School Visit|2026-11-04,2026 Fall Overlake School Visit,2026-11-04,"Redmond, WA United States","November 04, 2026",20261031000000
+uw,2026 Fall Ballard HS Visit|2026-11-04,2026 Fall Ballard HS Visit,2026-11-04,"Seattle, WA United States","November 04, 2026",20261031000000
+uw,2026 Fall Prosser High School College and Career Fair|2026-11-04,2026 Fall Prosser High School College and Career Fair,2026-11-04,"Prosser, WA United States","November 04, 2026",20261031000000
+uw,2026 Fall Ridgefield High School Fair|2026-11-04,2026 Fall Ridgefield High School Fair,2026-11-04,"Ridgefield, WA United States","November 04, 2026",20261031000000
+uw,2026 Fall Harrison Prep College and Career Fair|2026-11-03,2026 Fall Harrison Prep College and Career Fair,2026-11-03,"Lakewood, WA United States","November 03, 2026",20261031000000
+uw,2026 Fall Mountain View High School Fair|2026-11-03,2026 Fall Mountain View High School Fair,2026-11-03,"Vancouver, WA United States","November 03, 2026",20261031000000
+uw,2026 Fall Othello High School Visit|2026-11-03,2026 Fall Othello High School Visit,2026-11-03,"Othello, WA United States","November 03, 2026",20261031000000
+uw,2026 Fall Royal High School Visit|2026-11-03,2026 Fall Royal High School Visit,2026-11-03,"Royal City, WA United States","November 03, 2026",20261031000000
+uw,2026 Fall Heritage High School Fair|2026-11-03,2026 Fall Heritage High School Fair,2026-11-03,"Vancouver, WA United States","November 03, 2026",20261031000000
+uw,2026 Fall Lakes High School Personal Statement Workshop|2026-11-02,2026 Fall Lakes High School Personal Statement Workshop,2026-11-02,"Lakewood, WA United States","November 02, 2026",20261031000000
+uw,2026 Fall Washington High School Visit|2026-11-02,2026 Fall Washington High School Visit,2026-11-02,"Tacoma, WA United States","November 02, 2026",20261031000000
+uw,2026 Fall East Valley High School College & Career Fair|2026-11-18,2026 Fall East Valley High School College & Career Fair,2026-11-18,"Yakima, WA United States","November 18, 2026",20261031000000
+uw,2026 Fall Lakewood High School Fair|2026-11-19,2026 Fall Lakewood High School Fair,2026-11-19,"Arlington, WA United States","November 19, 2026",20261031000000
+ncsu,b1ad8ea2-9d77-4490-89d7-8010649c6547,College of The Albemarle Transfer Fair,2026-11-02,"Elizabeth City, NC",United States—North Carolina,20261031000000
+ncsu,ddc2a0f1-95db-4ff5-a1b5-1aeabee570e2,Beaufort County Schools (Evening) College Fair,2026-11-05,"Okatie, SC",United States—South Carolina,20261031000000
+ncsu,652326d8-e9e0-4a1e-8c08-f014b2fc0a0e,Beaufort County Schools (Morning) College Fair,2026-11-05,"Okatie, SC",United States—South Carolina,20261031000000
+ncsu,dc385307-a497-40da-8b30-d50db64d409e,Cane Bay High School College Fair,2026-11-04,"Summerville, SC",United States—South Carolina,20261031000000
+ncsu,ac0490f1-fa28-4bec-85cd-998435ac4c03,Fort Dorchester High School College Fair,2026-11-04,"North Charleston, SC",United States—South Carolina,20261031000000
+ncsu,6559aa16-994d-4a13-8ca5-ecb9b2462ecf,Ashley Ridge High School College Fair,2026-11-04,"Summerville, SC",United States—South Carolina,20261031000000
+ncsu,32ee700d-9dcf-4441-8f90-796faa66f762,Summerville High School College Fair,2026-11-04,"Summerville, SC",United States—South Carolina,20261031000000
+ncsu,4405b484-7a5e-4b59-baef-dc8b6eafb09b,Stratford High School College Fair,2026-11-02,"Goose Creek, SC",United States—South Carolina,20261031000000
+ncsu,b9fd27a4-4c06-4b12-a254-1f937ba39c03,Charleston County Schools (Afternoon) College Fair,2026-11-02,"Charleston, SC",United States—South Carolina,20261031000000
+ncsu,e4867eb4-c665-4031-b424-85dc9a317dfa,Hampton County High School College Fair,2026-11-06,"Hampton, SC",United States—South Carolina,20261031000000
+ncsu,ed72f861-8047-4f0b-a843-f2e9de532b38,Charleston County Schools (Morning) College Fair,2026-11-02,"Charleston, SC",United States—South Carolina,20261031000000
+ncsu,fa3d91e6-4abb-41bd-8bcd-5dbfda0c8e1c,Catawba Valley Community College Transfer Fair,2026-11-10,"Hickory, NC",United States—North Carolina,20261031000000
+ncsu,37e809e2-2c9d-47f4-bb02-51dce3ed3515,Durham Technical Community College Transfer Fair,2026-11-05,"Durham, NC",United States—North Carolina,20261031000000
+ncsu,d0856326-814b-49c6-b930-d6fac8e8bfb2,Guilford Technical Community College Transfer Fair,2026-11-05,"Jamestown, NC",United States—North Carolina,20261031000000
+ncsu,1240169d-b91e-4c3c-b8f7-bfcdeb0399e8,Johnston Community College Transfer Fair,2026-11-04,"Smithfield, NC",United States—North Carolina,20261031000000
+ncsu,eb17b619-f248-4358-8624-33e6d0c801ab,Wayne Community College Transfer Fair,2026-11-04,"Goldsboro, NC",United States—North Carolina,20261031000000
+ncsu,94aba3e0-6fdd-4faf-a371-579dd8b0c5f8,Lenoir Community College Transfer Fair,2026-11-03,"Kinston, NC",United States—North Carolina,20261031000000
+ncsu,35da3461-3a61-49ab-b8a3-0a66aa30be05,Beaufort County Community College Transfer Fair,2026-11-03,"Washington, NC",United States—North Carolina,20261031000000
+ncsu,a3225b7b-76aa-4dbd-adfe-9671d1267568,Roanoke-Chowan Community College Transfer Fair,2026-11-02,"Ahoskie, NC",United States—North Carolina,20261031000000
+ncsu,f300cd10-f177-4ee2-8bc3-f097eff67790,Gaston College Transfer Fair,2026-11-10,"Dallas, NC",United States—North Carolina,20261031000000
+ncsu,26d640d3-f3bc-459c-9ef5-565c4306b0f5,Colleton County High School College Fair,2026-11-06,"Walterboro, SC",United States—South Carolina,20261031000000
