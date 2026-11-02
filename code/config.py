@@ -106,6 +106,7 @@ TITLE_PREFIXES = [
     r"^(high school visit|hs visit|school visit|visit)\s*[-:]\s*",
     r"^drop[- ]?off\s*:\s*",
     r"^d/n\s+",
+    r"^[a-z.]+ day at\s+",                              # "UW Day at Liberty High School"
 ]
 TITLE_SUFFIXES = [
     r"\([^)]*\)\s*$",                                   # (virtual), (Girls/Boys)
@@ -117,6 +118,9 @@ TITLE_SUFFIXES = [
     r"\b(virtual visit|spring visit|fall visit|visit|hsv|virtual|event|free app day)\s*$",
     r"\b(avid|gear up)\s*$",
     r"-\s*[^-]*public schools\s*$",
+    r"(?<=high school)\s*-.*$",                          # "Lincoln High School - Thrive Thursdays"
+    r"(?<=\bhs)\s*-.*$",                                 # "Pine HS - Fall Visit"
+    r"\b(admissions\s+)?presentation\s*$",               # "Timberline High School Admissions Presentation"
 ]
 # ---------------------------------------------------------------------------
 # Inference

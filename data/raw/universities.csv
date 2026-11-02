@@ -2,3 +2,10 @@ univ_id,name,state,exposed,admit_rate_2021,rep_share_2020,complete_records
 cu_boulder,University of Colorado Boulder,CO,1,,0.419,1
 uga,University of Georgia,GA,0,,,0
 berkeley,University of California-Berkeley,CA,0,,,0
+uidaho,University of Idaho,ID,0,,,0
+ipeds_102614,University of Alaska Fairbanks,AK,1,,,0
+ipeds_139940,Georgia State University,GA,0,,,0
+ipeds_161299,Maine Maritime Academy,ME,1,,,0
+ipeds_215275,University of Pittsburgh-Greensburg,PA,1,,,0
+ipeds_366252,Pennsylvania College of Technology,PA,1,,,0
+ipeds_377564,University of Washington-Tacoma Campus,WA,0,,,0

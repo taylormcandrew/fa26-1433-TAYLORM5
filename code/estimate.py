@@ -398,19 +398,25 @@ def main():
     results.to_csv(config.TABLES / "did_results.csv", index=False)
     write_latex(results, config.TABLES / "did_results.tex")
 
-    es = event_study(panel, "cycle", config.EVENT_STUDY_REF_CYCLE)
-    es.to_csv(config.TABLES / "event_study_cycle.csv", index=False)
     ref_label = f"{config.EVENT_STUDY_REF_CYCLE}-{str(config.EVENT_STUDY_REF_CYCLE + 1)[-2:]}"
-    plot_event_study(es, ref_label, config.FIGURES / "event_study_cycle.png", "Recruitment cycle (Aug-Jul)")
+    try:
+        es = event_study(panel, "cycle", config.EVENT_STUDY_REF_CYCLE)
+        es.to_csv(config.TABLES / "event_study_cycle.csv", index=False)
+        plot_event_study(es, ref_label, config.FIGURES / "event_study_cycle.png", "Recruitment cycle (Aug-Jul)")
+    except (ValueError, np.linalg.LinAlgError) as err:
+        print(f"  Event study by cycle skipped: {err}")
 
     sem = pd.read_csv(config.PANEL_SEMESTER)
     sem = sem[sem["n_matched"] > 0]
     ref_idx = sem.loc[sem["semester"] == config.EVENT_STUDY_REF_SEMESTER, "sem_index"]
     if not ref_idx.empty:
-        es_s = event_study(sem, "sem_index", int(ref_idx.iloc[0]), label_col="semester")
-        es_s.to_csv(config.TABLES / "event_study_semester.csv", index=False)
-        plot_event_study(es_s, config.EVENT_STUDY_REF_SEMESTER,
-                         config.FIGURES / "event_study_semester.png", "Semester (F = Aug-Dec, S = Jan-Jul)")
+        try:
+            es_s = event_study(sem, "sem_index", int(ref_idx.iloc[0]), label_col="semester")
+            es_s.to_csv(config.TABLES / "event_study_semester.csv", index=False)
+            plot_event_study(es_s, config.EVENT_STUDY_REF_SEMESTER,
+                             config.FIGURES / "event_study_semester.png", "Semester (F = Aug-Dec, S = Jan-Jul)")
+        except (ValueError, np.linalg.LinAlgError) as err:
+            print(f"  Event study by semester skipped: {err}")
     print(f"\nTables in {config.TABLES.relative_to(config.ROOT)}/, figures in {config.FIGURES.relative_to(config.ROOT)}/")
 
 

@@ -1,6 +1,6 @@
 """Match standardized visits to high-school demographics and build the panel.
 
-Input:  data/intermediate/visits_standardized.csv (from code/standardize.py)
+Input:  data/derived/visits_standardized.csv (from code/standardize.py)
 
 Steps
   1. Keep events from Aug 2021 through Jul 2026; drop exact duplicates.
@@ -15,9 +15,9 @@ Steps
        y_zip_50 = eligible visits in ZIPs with resident URM share > 50% / visits with ZIP data
 
 Outputs
-  data/intermediate/visits_clean.csv    one row per event with its match (check match_method)
-  data/intermediate/panel_cycle.csv     one row per university x recruitment cycle
-  data/intermediate/panel_semester.csv  one row per university x semester
+  data/derived/visits_clean.csv    one row per event with its match (check match_method)
+  data/derived/panel_cycle.csv     one row per university x recruitment cycle
+  data/derived/panel_semester.csv  one row per university x semester
   output/unmatched_schools.csv          schools to hand-code into data/manual/hs_crosswalk.csv
 """
 
@@ -31,9 +31,9 @@ import config
 
 THRESHOLDS = sorted({config.URM_THRESHOLD, *config.ROBUST_THRESHOLDS})
 FUZZY_MIN = 0.80   # minimum name similarity for a same-ZIP fuzzy match
-GENERIC_WORDS = {"jr", "sr", "senior", "junior", "middle", "upper", "secondary", "schools", "academy",
+GENERIC_WORDS = {"jr", "sr", "senior", "junior", "middle", "upper", "secondary", "academy",
                  "prep", "college", "catholic", "charter", "magnet", "regional", "township", "day",
-                 "and", "at", "for", "campus", "state", "inc", "ltd", "private", "academic", "visit"}
+                 "and", "at", "for", "campus", "state", "inc", "ltd", "academic", "visit"}
 
 
 def ycol(t):
@@ -91,33 +91,43 @@ def lookup(v, todo, table, keys, method):
     v.loc[ok, "nces_id"], v.loc[ok, "match_method"] = hit[ok], method
 
 
-def fuzzy_within_zip(v, hs):
-    by_zip = hs[hs["zip"].ne("")].groupby("zip")
-    groups = {z: g for z, g in by_zip}
-    rows = v.index[v["nces_id"].isna() & v["zip"].ne("") & v["name_n"].ne("")]
+def fuzzy_within(v, hs, keys, label, min_score=FUZZY_MIN, strip_city=False):
+    """Closest name among schools sharing `keys` (the same ZIP, or the same city + state).
+    With strip_city, words of the city name are removed from both names before comparing,
+    so "Santa Barbara Area" is not matched to "Santa Barbara High" just for sharing a city."""
+    ok_hs = hs[(hs[keys] != "").all(axis=1)]
+    groups = {k if isinstance(k, tuple) else (k,): g for k, g in ok_hs.groupby(keys)}
+    rows = v.index[v["nces_id"].isna() & (v[keys] != "").all(axis=1) & v["name_n"].ne("")]
     for i in rows:
-        cand = groups.get(v.at[i, "zip"])
+        cand = groups.get(tuple(v.loc[i, keys]))
         if cand is None:
             continue
-        scores = cand["name_n"].map(lambda n: difflib.SequenceMatcher(None, n, v.at[i, "name_n"]).ratio())
+        city_words = set(v.at[i, "city_n"].split())
+
+        def clean(n):
+            return " ".join(w for w in n.split() if w not in city_words) if strip_city else n
+
+        name = clean(v.at[i, "name_n"])
+        if strip_city and not (set(name.split()) - {"hs"}):
+            continue                               # the name is just the city: too ambiguous
+        scores = cand["name_n"].map(lambda n: difflib.SequenceMatcher(None, clean(n), name).ratio())
         best = scores.idxmax()
         if (scores == scores[best]).sum() > 1:     # tie between schools: leave for hand-coding
             continue
-        name, cname = v.at[i, "name_n"], cand.at[best, "name_n"]
+        cname = clean(cand.at[best, "name_n"])
         # One name's words are all inside the other's, and every extra word is either
         # generic ("senior", "jr", "charter", ...), a number, a single initial, or part of
         # the city name: "Pueblo East HS" (Pueblo) = "East High School", "Limon" =
         # "Limon Junior-Senior High School". This rejects "Avon Old Farms" -> "Avon High"
         # and "Dwight-Englewood" -> "Dwight Morrow High".
         w1, w2 = set(name.split()) - {"hs"}, set(cname.split()) - {"hs"}
-        city_words = set(v.at[i, "city_n"].split())
         contained = False
         if w1 and w2 and (w1 <= w2 or w2 <= w1):
             extra = (w1 | w2) - (w1 & w2)
             contained = all(w in GENERIC_WORDS or w in city_words or w.isdigit() for w in extra)
-        if scores[best] >= FUZZY_MIN or contained:
+        if scores[best] >= min_score or contained:
             v.at[i, "nces_id"] = cand.at[best, "nces_id"]
-            v.at[i, "match_method"] = f"fuzzy_zip:{scores[best]:.2f}"
+            v.at[i, "match_method"] = f"{label}:{scores[best]:.2f}"
 
 
 def match_schools(v, unis):
@@ -168,7 +178,9 @@ def match_schools(v, unis):
     v.loc[far, ["nces_id", "match_method"]] = pd.NA
 
     # 5. Closest name among schools in the same ZIP code
-    fuzzy_within_zip(v, hs)
+    fuzzy_within(v, hs, ["zip"], "fuzzy_zip")
+    # Same, within the same city and state (for sources without ZIPs, e.g. scraped pages)
+    fuzzy_within(v, hs, ["city_n", "state_n"], "fuzzy_city", min_score=0.90, strip_city=True)
 
     # 6. No location in the record (often virtual visits): the university's home
     #    state first, then anywhere, only if the name is unique there.
