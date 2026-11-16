@@ -271,7 +271,9 @@ def main():
     if missing:
         sys.exit(f"data/raw/universities.csv is missing columns {missing}")
 
-    v = pd.read_csv(config.VISITS_STANDARDIZED, dtype=str, parse_dates=["date"])
+    v = pd.read_csv(config.VISITS_STANDARDIZED, dtype=str)
+    # Some files give a time with the date, some don't: read both, keep the day only
+    v["date"] = pd.to_datetime(v["date"], format="mixed").dt.normalize()
     unknown = sorted(set(v["univ_id"]) - set(unis["univ_id"]))
     if unknown:
         sys.exit(f"data/raw/universities.csv has no row for {unknown}")

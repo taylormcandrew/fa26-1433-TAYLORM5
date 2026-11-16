@@ -75,6 +75,8 @@ ZIP_MEASURE = "urm_share_all"
 # match sets the category. Titles matching none of them are "hs_visit" if the
 # event type or title says visit/virtual, else "other".
 EVENT_RULES = [
+    # recruiting at a community college (Cincinnati's "College Visit"): not a high school
+    ("college_visit", r"^college visit$"),
     # after students apply, so not recruitment of applicants
     ("admitted_student", r"admitted student|admit(ted)? (day|event|reception)|accepted student"),
     # materials left at a school with no event (unless the title also says visit)
@@ -194,6 +196,23 @@ VISIT_FILES = {
         "nces_id": None,
         "event_type": "Form Template",
         "keep": {"Status": ["CONFIRMED"]},
+    },
+    # Public records request. A 169-page PDF table, converted to one table by
+    # code/prep_cincinnati.py. "type" says what kind of event it was, so it is used as the
+    # title that sets the category; the school is in its own column. Only CONFIRMED events.
+    "uc_cincinnati": {
+        "file": "cincinnati.csv",
+        "date": "date",
+        "date_format": "%Y-%m-%d",
+        "title": "type",
+        "school_name": "location",
+        "city_state": None,
+        "city": "city",
+        "state": "state",
+        "zip": None,
+        "nces_id": None,
+        "event_type": "type",
+        "keep": {"status": ["CONFIRMED"]},
     },
 }
 
