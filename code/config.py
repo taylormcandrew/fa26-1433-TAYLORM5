@@ -358,6 +358,22 @@ VISIT_FILES = {
         "nces_id": None,
         "event_type": "Event Type",
         "keep": {"Form Status": ["CONFIRMED"]},
+    },    # Public records request (NextRequest 26-1003): "Events Attended", Aug 2022 - Jul 2026
+    # (no 2021-22 records). The school or venue is in "Location"; there is no city column, so
+    # schools are matched by name within the state. In-person high-school visits and fairs only.
+    "fsu": {
+        "file": "fsu.xlsx",
+        "sheet": "Export",
+        "date": "Start Date",
+        "title": "Event",
+        "school_name": "Location",
+        "city_state": None,
+        "city": None,
+        "state": "State",
+        "zip": None,
+        "nces_id": None,
+        "event_type": "Type",
+        "keep": {"Type": ["High School Visit", "College Fair"], "Event Format": ["In-person"]},
     },
 }
 
