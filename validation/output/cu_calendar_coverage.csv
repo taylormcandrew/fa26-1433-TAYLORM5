@@ -1,0 +1,7 @@
+univ_id,year,page,widget,copies,failed,events,first_saved,live,status
+cub_web,2021,https://ugrad.apply.colorado.edu/portal/upcoming-off-campus-events,,52,2,0,2021-08-05,False,"copies saved, but no events found"
+cub_web,2022,https://ugrad.apply.colorado.edu/portal/upcoming-off-campus-events,,16,1,0,2022-08-04,False,"copies saved, but no events found"
+cub_web,2023,https://ugrad.apply.colorado.edu/portal/upcoming-off-campus-events,,0,0,0,,False,no copies saved: missing
+cub_web,2024,https://ugrad.apply.colorado.edu/portal/upcoming-off-campus-events,,0,0,0,,False,no copies saved: missing
+cub_web,2025,https://ugrad.apply.colorado.edu/portal/upcoming-off-campus-events,,0,0,0,,False,no copies saved: missing
+cub_web,2026,https://ugrad.apply.colorado.edu/portal/upcoming-off-campus-events,,2,0,0,2026-11-02,True,"copies saved, but no events found"

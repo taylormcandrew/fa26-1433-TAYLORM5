@@ -1,0 +1,4 @@
+Source,Observations,Linked to a high school,Mean URM share,Median URM share,Share to >50% URM
+Records request: school visits,613.0,488.0,0.291,0.201,0.164
+Public calendar map: event pins,419.0,392.0,0.309,0.206,0.191
+"Difference (calendar minus records), 95% CI",,,"+0.018 [-0.015, +0.050]",,"+0.027 [-0.024, +0.078]"
