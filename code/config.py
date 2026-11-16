@@ -214,6 +214,25 @@ VISIT_FILES = {
         "event_type": "type",
         "keep": {"status": ["CONFIRMED"]},
     },
+    # Public records request (NextRequest 26-2380). Slate export, one row per event.
+    # "Event Type" says what kind of event it was, so it is used as the title that sets the
+    # category; the school is in its own column. Only CONFIRMED events in the United States
+    # (schools abroad cannot be matched to NCES data).
+    "umn_twin_cities": {
+        "file": "umn.xlsx",
+        "sheet": "Export",
+        "date": "Event Date",
+        "date_format": "%m/%d/%Y",
+        "title": "Event Type",
+        "school_name": "Location Name",
+        "city_state": None,
+        "city": "City",
+        "state": "State/Region",
+        "zip": None,
+        "nces_id": None,
+        "event_type": "Event Type",
+        "keep": {"Event Status": ["CONFIRMED"], "Country": ["United States"]},
+    },
 }
 
 # Scraped calendars (scraper/export.py) all share one format, so every
