@@ -142,7 +142,8 @@ SEED = 1433
 #   nces_id       optional; if present, schools match exactly
 #   event_type    optional; used when the title does not settle the category
 # Optional: "sheet" (Excel sheet name), "header_row" (0 = first row),
-# "date_format" (e.g. "%m/%d/%Y"; omit to let pandas infer).
+# "date_format" (e.g. "%m/%d/%Y"; omit to let pandas infer),
+# "keep" ({column: [values]}: keep only rows with these values, e.g. confirmed events).
 VISIT_FILES = {
     # CORA request no. 879. Event export with one row per event; the school name
     # is inside the event title. "Cycle" in the file is the END year of the
@@ -175,6 +176,24 @@ VISIT_FILES = {
         "zip": "zip",
         "nces_id": None,
         "event_type": "event_type",
+    },
+    # Public records request. Slate event export, one row per event. "Form Template" says
+    # what kind of event it was ("High School Visit", "College Fair", ...), so it is used as
+    # the title that sets the category; the school is in its own column. Only events with
+    # Status CONFIRMED are kept (cancelled, tentative and declined events did not happen).
+    "umass_amherst": {
+        "file": "umass.xlsx",
+        "sheet": "Export",
+        "date": "Form Start Date/Time",
+        "title": "Form Template",
+        "school_name": "Location (school name)",
+        "city_state": None,
+        "city": "City",
+        "state": "Region",
+        "zip": None,
+        "nces_id": None,
+        "event_type": "Form Template",
+        "keep": {"Status": ["CONFIRMED"]},
     },
 }
 
