@@ -307,6 +307,26 @@ VISIT_FILES = {
         "event_type": "type",
         "default_type": "School Visit",
         "keep": {"status": ["CONFIRMED"]},
+    },    # Public records request (ORR2026-275). TargetX export, one row per event; the school
+    # (with ZIP) comes from the linked school record. Event types that are not high-school
+    # recruiting (community-college and transfer visits, counselor events, receptions,
+    # virtual events) are dropped. The 3 events named "canceled" are dropped.
+    "ttu": {
+        "file": "ttu.xlsx",
+        "sheet": "TTU Recruitment Events 2021-202",
+        "date": "Event Date",
+        "title": "Event Name",
+        "school_name": "School Name",
+        "city_state": None,
+        "city": "City",
+        "state": "State",
+        "zip": "ZIP Code",
+        "nces_id": None,
+        "event_type": "Event Type",
+        "keep": {"Event Status": ["Not marked canceled"],
+                 "Event Type": ["High School Visit", "College Fair/Day", "Application Workshop",
+                                "TACRAO Fair", "NMCAC Fair", "NACAC Fair", "WACAC Fair",
+                                "RMACAC Fair", "VACRAO Fair"]},
     },
 }
 

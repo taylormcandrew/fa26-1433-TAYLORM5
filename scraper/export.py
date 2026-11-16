@@ -42,6 +42,8 @@ INSTITUTION_BANS = {
                     "-- TO VERIFY in its 2022-23 Common Data Set, item C7",
     "tamu": "Texas A&M announced in December 2003 (President Robert Gates) that it would not "
             "consider race in admissions after Grutter; race-neutral since",
+    "ttu": "Texas Tech: 2022-23 Common Data Set, item C7, lists racial/ethnic status as "
+           "Not Considered",
 }
 # Package colleges whose collected pages cover different territories in different years, so
 # their before/after counts aren't comparable (see SAMPLE_NOTES.md in the package).
