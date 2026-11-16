@@ -106,6 +106,7 @@ TITLE_PREFIXES = [
     r"^(high school visit|hs visit|school visit|visit)\s*[-:]\s*",
     r"^drop[- ]?off\s*:\s*",
     r"^d/n\s+",
+    r"^[a-z.]+ day at\s+",                              # "UW Day at Liberty High School"
 ]
 TITLE_SUFFIXES = [
     r"\([^)]*\)\s*$",                                   # (virtual), (Girls/Boys)
@@ -117,6 +118,9 @@ TITLE_SUFFIXES = [
     r"\b(virtual visit|spring visit|fall visit|visit|hsv|virtual|event|free app day)\s*$",
     r"\b(avid|gear up)\s*$",
     r"-\s*[^-]*public schools\s*$",
+    r"(?<=high school)\s*-.*$",                          # "Lincoln High School - Thrive Thursdays"
+    r"(?<=\bhs)\s*-.*$",                                 # "Pine HS - Fall Visit"
+    r"\b(admissions\s+)?presentation\s*$",               # "Timberline High School Admissions Presentation"
 ]
 # ---------------------------------------------------------------------------
 # Inference
@@ -158,3 +162,11 @@ VISIT_FILES = {
         "event_type": "Event Type",
     },
 }
+
+# Scraped calendars (scraper/export.py) all share one format, so every
+# data/raw/visits/<univ>_scraped.csv file is added here automatically.
+SCRAPED_FORMAT = {"date": "date", "date_format": "%Y-%m-%d", "title": "title",
+                  "school_name": None, "city_state": "city_state", "city": None,
+                  "state": None, "zip": "zip", "nces_id": None, "event_type": "event_type"}
+for _f in sorted(VISITS_DIR.glob("*_scraped.csv")):
+    VISIT_FILES[_f.stem.removesuffix("_scraped")] = dict(SCRAPED_FORMAT, file=_f.name)

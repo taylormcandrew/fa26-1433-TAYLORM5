@@ -1,1 +1,98 @@
-school_name,city,state,nces_id
+school_name,city,state,nces_id,nces_name,nces_city,note
+Allderdice,,PA,421917000409,Pittsburgh Allderdice HS,Pittsburgh,Pitt-Greensburg
+Altoona,,PA,420234000913,Altoona Area HS,Altoona,Pitt-Greensburg
+Avella,,PA,420276004165,Avella Area JSHS,Avella,Pitt-Greensburg
+Avonworth,,PA,420282005199,Avonworth HS,Pittsburgh,Pitt-Greensburg
+Baldwin,,PA,420297000050,Baldwin SHS,Pittsburgh,Pitt-Greensburg
+Bedford,,PA,420318000726,Bedford SHS,Bedford,Pitt-Greensburg
+Belle Vernon,,PA,420321004930,Belle Vernon Area HS,Belle Vernon,Pitt-Greensburg
+Berlin Brothers,,PA,420342006207,Berlin Brothersvalley SHS,Berlin,Pitt-Greensburg
+Bethel Park,,PA,420351000062,Bethel Park HS,Bethel Park,Pitt-Greensburg
+Brownsville,,PA,420408004818,Brownsville Area HS,Brownsville,Pitt-Greensburg
+Burgettstown,,PA,420450004195,Burgettstown MS/HS,Burgettstown,Pitt-Greensburg
+Burrell,,PA,420453004340,Burrell HS,Lower Burrell,Pitt-Greensburg
+Burrell High School,,PA,420453004340,Burrell HS,Lower Burrell,Pitt-Greensburg
+Canon Mac,,PA,420489004217,Canon-McMillan SHS,Canonsburg,Pitt-Greensburg
+Canon-McMillan HS,,PA,420489004217,Canon-McMillan SHS,Canonsburg,Pitt-Greensburg
+Capa,,PA,421917007014,Pittsburgh CAPA 6-12,Pittsburgh,Pitt-Greensburg
+Charleroi,,PA,420564004715,Charleroi Area HS,Charleroi,Pitt-Greensburg
+Chartiers Valley,,PA,420570006706,Chartiers Valley HS,Bridgeville,Pitt-Greensburg
+Connellsville,,PA,420666005228,Connellsville Area SHS,Connellsville,Pitt-Greensburg
+Deer Lakes,,PA,420754000513,Deer Lakes HS,Cheswick,Pitt-Greensburg
+Deer Lakes HS,,PA,420754000513,Deer Lakes HS,Cheswick,Pitt-Greensburg
+Deer Lakes High School,,PA,420754000513,Deer Lakes HS,Cheswick,Pitt-Greensburg
+Derry,,PA,420756004352,Derry Area SHS,Derry,Pitt-Greensburg
+East Allegheny,,PA,420806007559,East Allegheny JSHS,North Versailles,Pitt-Greensburg
+Fox Chapel,,PA,421007000156,Fox Chapel Area HS,Pittsburgh,Pitt-Greensburg
+Fox Chapel HS,,PA,421007000156,Fox Chapel Area HS,Pittsburgh,Pitt-Greensburg
+Fox Chapel High School,,PA,421007000156,Fox Chapel Area HS,Pittsburgh,Pitt-Greensburg
+Franklin Regional,,PA,421023004360,Franklin Regional SHS,Murrysville,Pitt-Greensburg
+Franklin Regional Instant Decision Day,,PA,421023004360,Franklin Regional SHS,Murrysville,Pitt-Greensburg
+Greater Latrobe,,PA,421098004845,Greater Latrobe SHS,Latrobe,Pitt-Greensburg
+Greensburg Central Catholic,,PA,PSS_01191207,GREENSBURG CENTRAL CATHOLIC HIGH SCHOOL,GREENSBURG,Pitt-Greensburg
+Greensburg Salem,,PA,421092004373,Greensburg-Salem HS,Greensburg,Pitt-Greensburg
+Hampton,,PA,421140005190,Hampton HS,Allison Park,Pitt-Greensburg
+Hampton High School,,PA,421140005190,Hampton HS,Allison Park,Pitt-Greensburg
+Hempfield,,PA,421176004404,Hempfield Area SHS,Greensburg,Pitt-Greensburg
+Hempfield Area HS,,PA,421176004404,Hempfield Area SHS,Greensburg,Pitt-Greensburg
+Hempfield HS,,PA,421176004404,Hempfield Area SHS,Greensburg,Pitt-Greensburg
+Hempfield High School,,PA,421176004404,Hempfield Area SHS,Greensburg,Pitt-Greensburg
+Hollidaysburg,,PA,421194005207,Hollidaysburg Area SHS,Hollidaysburg,Pitt-Greensburg
+Indiana,,PA,421215002325,Indiana Area SHS,Indiana,Pitt-Greensburg
+Jeannette,,PA,421233007617,Jeannette HS,Jeannette,Pitt-Greensburg
+Kiski,,PA,421284004431,Kiski Area HS,Vandergrift,Pitt-Greensburg
+Latrobe,,PA,421098004845,Greater Latrobe SHS,Latrobe,Pitt-Greensburg
+Laurel Highlands,,PA,421332006600,Laurel Highlands SHS,Uniontown,Pitt-Greensburg
+Ligonier,,PA,421371004442,Ligonier Valley HS,Ligonier,Pitt-Greensburg
+Ligonier Valley,,PA,421371004442,Ligonier Valley HS,Ligonier,Pitt-Greensburg
+McKeesport,,PA,421494006105,McKeesport Area SHS,McKeesport,Pitt-Greensburg
+Monessen,,PA,421560006181,Monessen SHS,Monessen,Pitt-Greensburg
+Monessen High School,,PA,421560006181,Monessen SHS,Monessen,Pitt-Greensburg
+Moon,,PA,421583004951,Moon SHS,Moon Township,Pitt-Greensburg
+Moon HS,,PA,421583004951,Moon SHS,Moon Township,Pitt-Greensburg
+Moon High School,,PA,421583004951,Moon SHS,Moon Township,Pitt-Greensburg
+Moon High School Visit,,PA,421583004951,Moon SHS,Moon Township,Pitt-Greensburg
+Mount Pleasant,,PA,421617004458,Mount Pleasant Area HS,Mount Pleasant,Pitt-Greensburg
+Mt. Lebanon,,PA,421611000254,Mt Lebanon SHS,Pittsburgh,Pitt-Greensburg
+North Allegheny HS,,PA,421701007482,North Allegheny HS,Wexford,Pitt-Greensburg
+North Allegheny High School,,PA,421701007482,North Allegheny HS,Wexford,Pitt-Greensburg
+North Hills,,PA,421722007122,North Hills SHS,Pittsburgh,Pitt-Greensburg
+North Hills HS,,PA,421722007122,North Hills SHS,Pittsburgh,Pitt-Greensburg
+North Hills High School,,PA,421722007122,North Hills SHS,Pittsburgh,Pitt-Greensburg
+Norwin,,PA,421794004717,Norwin SHS,North Huntingdon,Pitt-Greensburg
+Norwin High School,,PA,421794004717,Norwin SHS,North Huntingdon,Pitt-Greensburg
+Oakland Catholic,,PA,PSS_A9105891,OAKLAND CATHOLIC HIGH SCHOOL,PITTSBURGH,Pitt-Greensburg
+Penn Trafford,,PA,421866006648,Penn Trafford HS,Harrison City,Pitt-Greensburg
+Penn-Trafford,,PA,421866006648,Penn Trafford HS,Harrison City,Pitt-Greensburg
+Pine Richland,,PA,420285000315,Pine-Richland HS,Gibsonia,Pitt-Greensburg
+Pittsburgh CAPA,,PA,421917007014,Pittsburgh CAPA 6-12,Pittsburgh,Pitt-Greensburg
+Pittsburgh Central Catholic,,PA,PSS_01193995,CENTRAL CATHOLIC HIGH SCHOOL,PITTSBURGH,Pitt-Greensburg
+River Valley,,PA,420375007704,River Valley HS,Blairsville,Pitt-Greensburg
+Riverview High School,,PA,422043006928,Riverview JSHS,Oakmont,Pitt-Greensburg
+Serra Catholic,,PA,PSS_01193576,SERRA CATHOLIC HIGH SCHOOL,MCKEESPORT,Pitt-Greensburg
+Seton La Sale,,PA,PSS_01192787,SETON-LA SALLE HIGH SCHOOL,PITTSBURGH,Pitt-Greensburg
+Seton La Salle,,PA,PSS_01192787,SETON-LA SALLE HIGH SCHOOL,PITTSBURGH,Pitt-Greensburg
+Shaler HS,,PA,422120000460,Shaler Area HS,Pittsburgh,Pitt-Greensburg
+Shaler High School,,PA,422120000460,Shaler Area HS,Pittsburgh,Pitt-Greensburg
+Somerset,,PA,422184007509,Somerset Area Jr-Sr HS,Somerset,Pitt-Greensburg
+Somerset High School,,PA,422184007509,Somerset Area Jr-Sr HS,Somerset,Pitt-Greensburg
+South Fayette,,PA,422058000470,South Fayette Twp HS,McDonald,Pitt-Greensburg
+Southmoreland,,PA,422241006191,Southmoreland SHS,Alverton,Pitt-Greensburg
+Steel Valley,,PA,422279000196,Steel Valley SHS,Munhall,Pitt-Greensburg
+Steel Valley Instant Decision Day/High School,,PA,422279000196,Steel Valley SHS,Munhall,Pitt-Greensburg
+Steel Valley Instant Decision Day/High School Visit,,PA,422279000196,Steel Valley SHS,Munhall,Pitt-Greensburg
+Susquehannock,,PA,422238004614,Susquehannock HS,Glen Rock,Pitt-Greensburg
+The Kiski School,,PA,PSS_01197887,THE KISKI SCHOOL,SALTSBURG,Pitt-Greensburg
+Thomas Jefferson,,PA,422559000523,Thomas Jefferson HS,Jefferson Hills,Pitt-Greensburg
+Thomas Jefferson HS,,PA,422559000523,Thomas Jefferson HS,Jefferson Hills,Pitt-Greensburg
+Trinity,,PA,422376006012,Trinity SHS,Washington,Pitt-Greensburg
+Turkeyfoot HS,,PA,422388006216,Turkeyfoot Valley Area JSHS,Confluence,Pitt-Greensburg
+Upper St Clair,,PA,422457000492,Upper Saint Clair HS,Pittsburgh,Pitt-Greensburg
+Upper St. Clair,,PA,422457000492,Upper Saint Clair HS,Pittsburgh,Pitt-Greensburg
+Valley HS,,PA,421674007544,Valley JSHS,New Kensington,Pitt-Greensburg
+Washington,,PA,422499004286,Washington HS,Washington,Pitt-Greensburg
+Waynesboro,,PA,422511002243,Waynesboro Area SHS,Waynesboro,Pitt-Greensburg
+West Mifflin,,PA,422568000536,West Mifflin Area HS,West Mifflin,Pitt-Greensburg
+Woodland Hills,,PA,421650007214,Woodland Hills HS,Pittsburgh,Pitt-Greensburg
+Woodland Hills Instant Decision Day,,PA,421650007214,Woodland Hills HS,Pittsburgh,Pitt-Greensburg
+Yough,,PA,422115004735,Yough SHS,Herminie,Pitt-Greensburg

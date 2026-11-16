@@ -1,0 +1,11 @@
+name,state,group,cycles,events,source,school_visits,matched,match_rate,mean_urm_share,share_over_50
+University of Colorado Boulder,CO,Treatment,"2021-22, 2022-23, 2023-24, 2024-25, 2025-26",4761,Records request (CORA),3382,2908,0.86,0.28,0.14
+Pennsylvania College of Technology,PA,Treatment,"2021-22, 2022-23, 2024-25",518,Public calendars,307,233,0.76,0.24,0.11
+University of Alaska Fairbanks,AK,Treatment,"2021-22, 2022-23, 2023-24",368,Public calendars,248,187,0.75,0.27,0.11
+University of Pittsburgh-Greensburg,PA,Treatment,"2021-22, 2022-23, 2023-24, 2024-25, 2025-26",329,Public calendars,219,218,1.0,0.1,0.02
+Maine Maritime Academy,ME,Treatment,"2021-22, 2022-23, 2024-25, 2025-26",102,Public calendars,84,48,0.57,0.25,0.21
+University of Georgia,GA,Control,"2021-22, 2022-23, 2023-24, 2024-25",684,Public calendars,496,407,0.82,0.33,0.23
+University of Idaho,ID,Control,"2021-22, 2022-23, 2023-24, 2024-25, 2025-26",335,Public calendars,213,139,0.65,0.21,0.06
+University of Washington-Tacoma Campus,WA,Control,"2021-22, 2022-23, 2023-24, 2024-25, 2025-26",104,Public calendars,35,29,0.83,0.38,0.38
+Georgia State University,GA,Control,"2021-22, 2022-23, 2025-26",96,Public calendars,31,25,0.81,0.51,0.48
+University of California-Berkeley,CA,Control,"2021-22, 2022-23, 2024-25, 2025-26",40,Public calendars,0,0,,,
