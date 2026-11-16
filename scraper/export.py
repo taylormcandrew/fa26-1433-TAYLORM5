@@ -48,7 +48,8 @@ INSTITUTION_BANS = {
 EXCLUDE = {"ipeds_180461": "Montana State: regional itineraries differ across years",
            "ipeds_196024": "SUNY Delhi: pre and post schedules cover different staff/regions",
            "cu_boulder": "CU Boulder comes from the records request, never from scraping",
-           "cincinnati": "Cincinnati comes from the records request (uc_cincinnati)"}
+           "cincinnati": "Cincinnati comes from the records request (uc_cincinnati)",
+           "ucdavis": "UC Davis comes from the records request (uc_davis)"}
 # Package ids of universities our own scraper also covers -> our ids, so they are merged.
 SAME_UNIVERSITY = {"ipeds_139959": "uga", "ipeds_110635": "berkeley", "ipeds_142285": "uidaho",
                    "ipeds_170976": "umich", "ipeds_199193": "ncsu", "ipeds_201885": "cincinnati"}

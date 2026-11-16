@@ -271,6 +271,24 @@ VISIT_FILES = {
         "event_type": None,
         "default_type": "School Visit",
     },
+    # Public records request (UCDPRA260944). Slate export, one row per event; the file has no
+    # useful type ("event"), so the title sets the category and a title that is only a school's
+    # name is a visit. Only CONFIRMED events in the United States. Records start January 2022.
+    "uc_davis": {
+        "file": "ucdavis.xlsx",
+        "sheet": "Export",
+        "date": "Start Date",
+        "title": "Event Title",
+        "school_name": "Location",
+        "city_state": None,
+        "city": "City",
+        "state": "Region",
+        "zip": None,
+        "nces_id": None,
+        "event_type": None,
+        "default_type": "School Visit",
+        "keep": {"Status": ["CONFIRMED"], "Country": ["United States"]},
+    },
 }
 
 # Scraped calendars (scraper/export.py) all share one format, so every
