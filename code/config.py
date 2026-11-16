@@ -289,6 +289,25 @@ VISIT_FILES = {
         "default_type": "School Visit",
         "keep": {"Status": ["CONFIRMED"], "Country": ["United States"]},
     },
+    # Public records request (P002681-102826). Two sheets (CRM + pre-CRM archive), combined by
+    # code/prep_wwu.py. The title sets the category, with the CRM template (e.g. "High School
+    # Visit | In Person") as the event type; an archived title that is only a school's name
+    # is a visit. Only events that took place (status CONFIRMED).
+    "wwu": {
+        "file": "wwu.csv",
+        "date": "date",
+        "date_format": "%Y-%m-%d",
+        "title": "title",
+        "school_name": "school",
+        "city_state": None,
+        "city": "city",
+        "state": "state",
+        "zip": None,
+        "nces_id": None,
+        "event_type": "type",
+        "default_type": "School Visit",
+        "keep": {"status": ["CONFIRMED"]},
+    },
 }
 
 # Scraped calendars (scraper/export.py) all share one format, so every
