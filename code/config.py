@@ -343,6 +343,21 @@ VISIT_FILES = {
         "nces_id": None,
         "event_type": "type",
         "keep": {"status": ["CONFIRMED"]},
+    },    # CORA request no. 911. Same Slate export format as CU Boulder's; only CONFIRMED events.
+    "cu_denver": {
+        "file": "cudenver.xlsx",
+        "sheet": "Export",
+        "date": "Start Date - MM/dd/yyyy",
+        "date_format": "%m/%d/%Y",
+        "title": "Title",
+        "school_name": None,            # taken from the title
+        "city_state": "City, State",
+        "city": None,
+        "state": None,
+        "zip": "5-digit ZIP",
+        "nces_id": None,
+        "event_type": "Event Type",
+        "keep": {"Form Status": ["CONFIRMED"]},
     },
 }
 
