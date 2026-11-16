@@ -328,6 +328,22 @@ VISIT_FILES = {
                                 "TACRAO Fair", "NMCAC Fair", "NACAC Fair", "WACAC Fair",
                                 "RMACAC Fair", "VACRAO Fair"]},
     },
+    # Public records request (R014862-102826). CRM export with no location column, converted
+    # by code/prep_utaustin.py (keeps high-school visits and fairs; school name from title).
+    "ut_austin": {
+        "file": "utaustin.csv",
+        "date": "date",
+        "date_format": "%Y-%m-%d",
+        "title": "title",
+        "school_name": "school",
+        "city_state": None,
+        "city": None,
+        "state": "state",
+        "zip": None,
+        "nces_id": None,
+        "event_type": "type",
+        "keep": {"status": ["CONFIRMED"]},
+    },
 }
 
 # Scraped calendars (scraper/export.py) all share one format, so every
