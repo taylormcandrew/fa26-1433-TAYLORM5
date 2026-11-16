@@ -4,8 +4,9 @@ Main specification (university x recruitment cycle, weighted by matched eligible
 
     Y_it = alpha_i + lambda_t + beta * (Post_t x Exposed_i) + e_it
 
-    Y_it      share of university i's eligible visits in cycle t going to high schools
-              with URM share > 50%
+    Y_it      mean URM share of the high schools university i visited in cycle t, divided by
+              the mean URM share of the schools it visited before SFFA (pre-SFFA value = 1),
+              so beta is a proportional change relative to each university's own baseline
     alpha_i   university fixed effects (absorb Exposed_i)
     lambda_t  recruitment-cycle fixed effects (absorb Post_t)
     Exposed_i 1 if the university's state had no race-conscious admissions ban before SFFA
@@ -31,7 +32,8 @@ from scipy import stats
 
 import config
 
-MAIN_Y = f"y_{round(config.URM_THRESHOLD * 100)}"
+MAIN_Y = "y_index"   # mean URM share of visited schools / the university's own pre-SFFA mean
+MIN_PRE_VISITS = 20  # robustness: drop universities whose baseline rests on fewer visits
 ZIP_Y = f"y_zip_{round(config.URM_THRESHOLD * 100)}"
 TREAT = "post_x_exposed"
 INK, MUTED, GRID = "#1f2328", "#6e7781", "#d0d7de"
@@ -147,13 +149,15 @@ def run_specs(full, rng):
     p["post_x_repshare"] = p["post"] * p["rep_share_2020"]
     p_alt = full[full["n_matched_alt"] > 0]
     p_zip = full[full["n_zip"] > 0]
+    pre_n = p[p["post"] == 0].groupby("univ_id")["n_matched"].sum()   # visits behind each baseline
+    p_big = p[p["univ_id"].map(pre_n).fillna(0) >= MIN_PRE_VISITS]
 
     base = dict(y=MAIN_Y, x_cols=[TREAT], fe_cols=["univ_id", "cycle"], weight="n_matched")
     specs = [
         ("(1) Main", p, base),
         ("(2) Unweighted", p, {**base, "weight": None}),
         *[(f"(3) URM > {round(t * 100)}%", p, {**base, "y": f"y_{round(t * 100)}"})
-          for t in config.ROBUST_THRESHOLDS],
+          for t in sorted({config.URM_THRESHOLD, *config.ROBUST_THRESHOLDS})],   # fixed cutoffs
         ("(4) Drop 2023-24 cycle", p[p["cycle"] != config.FIRST_POST_CYCLE], base),
         ("(5) Selectivity tier x cycle FE", p, {**base, "fe_cols": ["univ_id", "tier_cycle"]}),
         ("(6) + Post x GOP vote share 2020", p, {**base, "x_cols": [TREAT, "post_x_repshare"]}),
@@ -161,6 +165,7 @@ def run_specs(full, rng):
         ("(8) Incl. school-hosted fairs", p_alt,
          {**base, "y": f"{MAIN_Y}_alt", "weight": "n_matched_alt"}),
         ("(9) ZIP-level URM share", p_zip, {**base, "y": ZIP_Y, "weight": "n_zip"}),
+        (f"(10) Baseline from >= {MIN_PRE_VISITS} pre-SFFA visits", p_big, base),
     ]
 
     rows = []
@@ -181,7 +186,13 @@ def run_specs(full, rng):
 
 def event_study(panel, time_col, ref, label_col=None):
     p = panel.dropna(subset=[MAIN_Y]).copy()
-    periods = sorted(p[time_col].unique())
+    # A period can only be compared if both exposed and control universities are seen in it
+    # (e.g. a scraped calendar covering only fall 2022 and fall 2023 adds nothing to 2021).
+    both = p.groupby(time_col)["exposed"].nunique()
+    periods = sorted(k for k in p[time_col].unique() if both.get(k, 0) == 2)
+    if ref not in periods:
+        raise ValueError(f"reference period {ref} lacks exposed or control universities")
+    p = p[p[time_col].isin(periods)]
     others = [k for k in periods if k != ref]
     cols = []
     for k in others:
@@ -219,7 +230,7 @@ def plot_event_study(es, ref_label, path, xlabel):
                 fmt="o", ms=5, color=mark, ecolor=mark, elinewidth=1.5, capsize=0)
     ax.set_xticks(x, es["label"], fontsize=8, color=ink)
     ax.set_xlabel(xlabel, fontsize=9, color=ink)
-    ax.set_ylabel("Exposed - control, share of visits\nto high-URM high schools", fontsize=9, color=ink)
+    ax.set_ylabel("Exposed - control, URM share of visited\nschools relative to pre-SFFA mean", fontsize=9, color=ink)
     ax.tick_params(colors=muted, labelsize=8)
     ax.grid(axis="y", color="#d0d7de", lw=0.5)
     for s in ("top", "right"):
@@ -289,7 +300,10 @@ def prepost_by_university():
             x = d[d[share].notna()]
             if x["post"].nunique() < 2 or x[cluster].nunique() < 3:
                 continue
-            y = (x[share] > config.URM_THRESHOLD).astype(float).to_numpy()
+            if level == "school":   # main outcome: URM share relative to the own pre-SFFA mean
+                y = (x[share] / x["pre_mean"]).to_numpy()
+            else:                   # ZIP level: share of visits in ZIPs above 50% URM
+                y = (x[share] > config.URM_THRESHOLD).astype(float).to_numpy()
             b, se = ols_post(y, x["post"].to_numpy(float), x[cluster])
             rows.append({"univ_id": univ, "outcome_level": level,
                          "share_pre": y[x["post"].to_numpy() == 0].mean(),
@@ -302,18 +316,18 @@ def prepost_by_university():
 
 
 def plot_trends(full, path):
-    """Share of visits to high-URM schools (and ZIPs) by cycle, exposed vs control universities."""
+    """Main outcome (and ZIP share) by cycle, exposed vs control universities."""
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
-    panels = [(MAIN_Y, "n_matched", "High schools with >50% URM students"),
+    panels = [(MAIN_Y, "n_matched", "URM share of visited high schools (pre-SFFA mean = 1)"),
               (ZIP_Y, "n_zip", "ZIPs with >50% URM residents")]
     panels = [p for p in panels if full[p[0]].notna().any()]
     if not panels:
         return
     fig, axes = plt.subplots(1, len(panels), figsize=(4.2 * len(panels) + 0.6, 3.6), dpi=200,
-                             sharey=True, squeeze=False)
+                             sharey=False, squeeze=False)
     cycles = sorted(full["cycle"].unique())
     labels = {c: f"{c}-{str(c + 1)[-2:]}" for c in cycles}
     groups = [(1, "No prior ban (exposed)", SERIES[0]), (0, "Prior ban (control)", SERIES[1])]
@@ -338,8 +352,8 @@ def plot_trends(full, path):
             ax.spines[side].set_visible(False)
         for side in ("left", "bottom"):
             ax.spines[side].set_color(MUTED)
-    axes[0][0].set_ylim(0, min(1, ymax * 1.25 + 0.02))
-    axes[0][0].set_ylabel("Share of eligible visits", fontsize=9, color=INK)
+    axes[0][0].set_ylim(0, ymax * 1.25 + 0.02)
+    axes[0][0].set_ylabel("Relative to own pre-SFFA mean", fontsize=9, color=INK)
     note = "Recruitment cycles run August-July. Means weighted by visits."
     if len(present) > 1:
         axes[0][0].legend(frameon=False, fontsize=8, loc="lower left", bbox_to_anchor=(0, 1.08), ncol=2)

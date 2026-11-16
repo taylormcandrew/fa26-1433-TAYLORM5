@@ -1,0 +1,6 @@
+| group | period | universities | school_visits | matched | share_over_50 | mean_urm_share | median_urm_share | match_rate |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Treatment | Before SFFA | 5 | 1076 | 875 | 0.133 | 0.264 | 0.19 | 0.81 |
+| Treatment | After SFFA | 5 | 3164 | 2719 | 0.131 | 0.263 | 0.193 | 0.86 |
+| Control | Before SFFA | 4 | 325 | 225 | 0.169 | 0.28 | 0.22 | 0.69 |
+| Control | After SFFA | 4 | 450 | 375 | 0.235 | 0.334 | 0.24 | 0.83 |

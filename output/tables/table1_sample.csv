@@ -1,0 +1,10 @@
+University,State,Group,Source,Cycles,School visits,Matched,Match rate,Mean URM share,Share to >50% URM
+University of Colorado Boulder,CO,Treatment,Records request,all 5,3382,2908,0.86,0.28,0.14
+Pennsylvania College of Technology,PA,Treatment,Public calendar,"2021, 2022, 2024",307,233,0.76,0.24,0.11
+University of Alaska Fairbanks,AK,Treatment,Public calendar,"2021, 2022, 2023",248,187,0.75,0.27,0.11
+University of Pittsburgh-Greensburg,PA,Treatment,Public calendar,all 5,219,218,1.0,0.1,0.02
+Maine Maritime Academy,ME,Treatment,Public calendar,"2021, 2022, 2024, 2025",84,48,0.57,0.25,0.21
+University of Georgia,GA,Control,Public calendar,"2021, 2022, 2023, 2024",496,407,0.82,0.33,0.23
+University of Idaho,ID,Control,Public calendar,all 5,213,139,0.65,0.21,0.06
+University of Washington-Tacoma Campus,WA,Control,Public calendar,all 5,35,29,0.83,0.38,0.38
+Georgia State University,GA,Control,Public calendar,"2021, 2022, 2025",31,25,0.81,0.51,0.48

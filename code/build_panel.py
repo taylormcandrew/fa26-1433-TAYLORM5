@@ -11,6 +11,8 @@ Steps
        -> (no location given) name unique in the university's home state, then nationally
   4. Attach the URM share of residents in each visit's ZIP (Census ACS).
   5. Aggregate to university x cycle and university x semester:
+       y_index  = mean URM share of the matched schools visited, divided by the university's
+                  own pre-SFFA mean (main outcome; every university's pre-SFFA value is 1)
        y_50     = eligible visits to schools with URM share > 50% / matched eligible visits
        y_zip_50 = eligible visits in ZIPs with resident URM share > 50% / visits with ZIP data
 
@@ -240,6 +242,10 @@ def aggregate(v, unis, time_cols):
         for t in THRESHOLDS:
             e[ycol(t) + suffix] = (e["urm_share"] > t).where(e["matched"])
         ys = [ycol(t) + suffix for t in THRESHOLDS] if not suffix else [ycol(config.URM_THRESHOLD) + suffix]
+        # Main outcome: each visited school's URM share relative to the university's own
+        # pre-SFFA mean. Its average per university x cycle = mean URM share / baseline.
+        e["y_index" + suffix] = e["urm_share"] / e["pre_mean"]
+        ys.append("y_index" + suffix)
         if not suffix:   # ZIP-level outcome for the main set of eligible visits
             zy = "y_zip_" + str(round(config.URM_THRESHOLD * 100))
             e[zy] = (e["zip_urm_share"] > config.URM_THRESHOLD).where(e["zip_urm_share"].notna())
@@ -279,6 +285,9 @@ def main():
     print(f"  {v['eligible'].sum():,} of {len(v):,} events are eligible ({', '.join(config.ELIGIBLE_CATEGORIES)})")
     v = match_schools(v, unis)
     v = add_zip_demographics(v)
+    # Each university's baseline: mean URM share of the matched schools it visited before SFFA
+    pre = v[v["eligible"] & v["matched"] & (v["cycle"] < config.FIRST_POST_CYCLE)]
+    v["pre_mean"] = v["univ_id"].map(pre.groupby("univ_id")["urm_share"].mean())
 
     v.to_csv(config.VISITS_CLEAN, index=False)
     aggregate(v, unis, ["cycle"]).to_csv(config.PANEL_CYCLE, index=False)
