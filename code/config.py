@@ -161,6 +161,21 @@ VISIT_FILES = {
         "nces_id": None,
         "event_type": "Event Type",
     },
+    # FOIA request. One Word/PDF travel schedule per recruiting trip, converted to one table
+    # by code/prep_montana_state.py (rerun it whenever files are added).
+    "montana_state": {
+        "file": "montana_state.csv",
+        "date": "date",
+        "date_format": "%Y-%m-%d",
+        "title": "title",               # school or fair name
+        "school_name": None,
+        "city_state": "city_state",
+        "city": None,
+        "state": None,
+        "zip": "zip",
+        "nces_id": None,
+        "event_type": "event_type",
+    },
 }
 
 # Scraped calendars (scraper/export.py) all share one format, so every
