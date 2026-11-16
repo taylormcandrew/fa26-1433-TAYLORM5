@@ -233,6 +233,26 @@ VISIT_FILES = {
         "event_type": "Event Type",
         "keep": {"Event Status": ["CONFIRMED"], "Country": ["United States"]},
     },
+    # Public records request (Texas Public Information Act, L006734). Slate export, one row
+    # per event; the school is in its own column. Only CONFIRMED events of type "High School
+    # Visit" or "College Fair" (visits to colleges and events at A&M's own Prospective Student
+    # Centers are not high-school recruiting). The event title sets the category, so e.g. an
+    # "Application Workshop" at a school is treated like a fair, as for other universities.
+    "tamu": {
+        "file": "tamu.xlsx",
+        "sheet": "Export",
+        "date": "Date",
+        "date_format": "%m/%d/%Y",
+        "title": "Title",
+        "school_name": "Location",
+        "city_state": None,
+        "city": "City",
+        "state": "Region",
+        "zip": None,
+        "nces_id": None,
+        "event_type": "Type",
+        "keep": {"Status": ["CONFIRMED"], "Type": ["High School Visit", "College Fair"]},
+    },
 }
 
 # Scraped calendars (scraper/export.py) all share one format, so every
