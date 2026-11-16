@@ -145,7 +145,8 @@ SEED = 1433
 #   event_type    optional; used when the title does not settle the category
 # Optional: "sheet" (Excel sheet name), "header_row" (0 = first row),
 # "date_format" (e.g. "%m/%d/%Y"; omit to let pandas infer),
-# "keep" ({column: [values]}: keep only rows with these values, e.g. confirmed events).
+# "keep" ({column: [values]}: keep only rows with these values, e.g. confirmed events),
+# "default_type" (event type for rows whose file gives none).
 VISIT_FILES = {
     # CORA request no. 879. Event export with one row per event; the school name
     # is inside the event title. "Cycle" in the file is the END year of the
@@ -252,6 +253,23 @@ VISIT_FILES = {
         "nces_id": None,
         "event_type": "Type",
         "keep": {"Status": ["CONFIRMED"], "Type": ["High School Visit", "College Fair"]},
+    },
+    # Public records request (Virginia FOIA, NextRequest 26-500): "HS Visits and College Fairs",
+    # all confirmed. No event type column, so the title sets the category ("... Visit",
+    # "... College Fair", "... Panel"); a title that is only a school's name is a visit.
+    "vcu": {
+        "file": "vcu.xlsx",
+        "sheet": "Export",
+        "date": "Event Date",
+        "title": "Title",
+        "school_name": "Location",
+        "city_state": None,
+        "city": "City",
+        "state": "State",
+        "zip": None,
+        "nces_id": None,
+        "event_type": None,
+        "default_type": "School Visit",
     },
 }
 

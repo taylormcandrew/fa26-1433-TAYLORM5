@@ -96,6 +96,8 @@ def standardize_one(univ_id, spec):
     out["date"] = pd.to_datetime(col(raw, spec, "date"), format=spec.get("date_format"), errors="coerce")
     out["title"] = col(raw, spec, "title")
     out["event_type"] = col(raw, spec, "event_type")
+    if spec.get("default_type"):            # file lists only visits and fairs, without a type
+        out["event_type"] = out["event_type"].fillna(spec["default_type"])
     out["nces_id"] = col(raw, spec, "nces_id")
     out["zip"] = col(raw, spec, "zip").str.extract(r"(\d{5})", expand=False)
 
