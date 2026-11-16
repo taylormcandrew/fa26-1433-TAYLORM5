@@ -374,6 +374,25 @@ VISIT_FILES = {
         "nces_id": None,
         "event_type": "Type",
         "keep": {"Type": ["High School Visit", "College Fair"], "Event Format": ["In-person"]},
+    },    # Florida public records request (UNF Office of the General Counsel). Slate export; the
+    # title ("Wakulla High School College Fair with UNF") sets the category, the school is in
+    # "Form Location". Only CONFIRMED events. Virtual events have no location, so they do not
+    # match a high school and drop out of the outcome.
+    "unf": {
+        "file": "unf.xlsx",
+        "sheet": "Export",
+        "date": "Form Start Date/Time",
+        "date_format": "%m/%d/%Y",
+        "title": "Form Title",
+        "school_name": "Form Location",
+        "city_state": None,
+        "city": "Form City",
+        "state": "Form Region",
+        "zip": None,
+        "nces_id": None,
+        "event_type": None,
+        "default_type": "School Visit",
+        "keep": {"Form Status": ["CONFIRMED"], "Form Type": ["event"]},
     },
 }
 
