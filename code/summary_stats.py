@@ -9,11 +9,22 @@ Reads the files build_panel.py made (data/derived/visits_clean.csv) and writes t
   summary_tables.html        both tables, formatted with titles and notes. Open it in a
                              browser, select a table, copy, and paste into Google Docs.
 
+and to output/figures/:
+  hist_urm_visits.png        Figure: URM share of the high schools visited, before vs after
+                             SFFA, one panel per group (each bar = share of that period's visits)
+  hist_urm_baseline.png      Figure: each university's pre-SFFA mean URM share, by group (why
+                             the main outcome measures each university against its own baseline)
+
 Run from the project folder after ./run.sh:   python3 code/summary_stats.py
 """
+import matplotlib
+import numpy as np
 import pandas as pd
 
 import config
+
+matplotlib.use("Agg")                      # draw to files, no window
+import matplotlib.pyplot as plt  # noqa: E402
 
 v = pd.read_csv(config.VISITS_CLEAN, low_memory=False)           # one row per event
 unis = pd.read_csv(config.UNIVERSITIES, dtype={"exposed": int})
@@ -108,7 +119,52 @@ html = (f"<html><head><meta charset='utf-8'><style>{style}</style></head><body>"
         f"<p class='note'>{summary}</p></body></html>")
 (config.TABLES / "summary_tables.html").write_text(html, encoding="utf-8")
 
+# ---- Figures: histograms of URM share -----------------------------------------------------
+COLORS = {False: "#9aa0a6", True: "#c0392b"}                  # before = grey, after = red
+BINS = np.linspace(0, 1, 21)                                   # 5-point-wide URM-share bins
+
+
+def style(ax, title):
+    ax.set_title(title, fontsize=9, loc="left")
+    ax.set_xlabel("URM share of high school", fontsize=8)
+    ax.tick_params(labelsize=7)
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+
+
+# Figure A: every matched visit's school URM share, before vs after, one panel per group.
+# Bars are shares of that group's visits in that period, so before and after are comparable
+# even though there are three post-SFFA cycles and two pre-SFFA cycles.
+fig, axes = plt.subplots(1, 2, figsize=(8, 3.2), dpi=200, sharey=True)
+for ax, g in zip(axes, ["Treatment", "Control"]):
+    for post, label in [(False, "Before SFFA"), (True, "After SFFA")]:
+        x = m.loc[(m["group"] == g) & (m["post"] == post), "urm_share"]
+        ax.hist(x, bins=BINS, weights=np.full(len(x), 1 / len(x)), histtype="step", lw=1.6,
+                color=COLORS[post], label=f"{label} (mean {x.mean():.3f})")
+        ax.axvline(x.mean(), color=COLORS[post], lw=1, ls="--")      # period mean
+    style(ax, f"{g} ({m.loc[m['group'] == g, 'univ_id'].nunique()} universities)")
+    ax.legend(frameon=False, fontsize=7)
+axes[0].set_ylabel("Share of matched visits", fontsize=8)
+fig.tight_layout()
+fig.savefig(config.FIGURES / "hist_urm_visits.png")
+plt.close(fig)
+
+# Figure B: one value per university, its pre-SFFA mean URM share (the outcome's baseline)
+base = m.groupby(["univ_id", "group"])["pre_mean"].first().reset_index()
+fig, ax = plt.subplots(figsize=(5, 3), dpi=200)
+ax.hist([base.loc[base["group"] == g, "pre_mean"] for g in ["Treatment", "Control"]],
+        bins=np.linspace(0, 0.8, 17), color=["#2c6fbb", "#e69f00"], label=["Treatment", "Control"])
+style(ax, "Pre-SFFA baseline by university")
+ax.set_xlabel("University's mean URM share of visited schools before SFFA", fontsize=8)
+ax.set_ylabel("Universities", fontsize=8)
+ax.yaxis.set_major_locator(matplotlib.ticker.MaxNLocator(integer=True))   # whole universities
+ax.legend(frameon=False, fontsize=7)
+fig.tight_layout()
+fig.savefig(config.FIGURES / "hist_urm_baseline.png")
+plt.close(fig)
+
 print("Table 1. Sample by university\n" + t1.to_string(index=False))
 print("\nTable 2. URM composition of visited high schools, before and after SFFA\n" + t2.to_string(index=False))
 print(f"\n{summary}\nRaw difference in differences (main outcome): {dd:+.3f}")
 print("\nSaved output/tables/table1_sample.csv, table2_by_group.csv and summary_tables.html")
+print("Saved output/figures/hist_urm_visits.png and hist_urm_baseline.png")
