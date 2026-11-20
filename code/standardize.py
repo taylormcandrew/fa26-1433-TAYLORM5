@@ -102,7 +102,7 @@ def standardize_one(univ_id, spec):
         return None
     raw = read_raw(path, spec)
     for column, values in spec.get("keep", {}).items():     # e.g. keep only CONFIRMED events
-        raw = raw[raw[column].isin(values)]
+        raw = raw[raw[column].fillna("").isin(values)]           # "" = blank cell
 
     out = pd.DataFrame(index=raw.index)
     out["univ_id"] = univ_id

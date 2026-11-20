@@ -273,7 +273,7 @@ VISIT_FILES = {
     },
     # Public records request (UCDPRA260944). Slate export, one row per event; the file has no
     # useful type ("event"), so the title sets the category and a title that is only a school's
-    # name is a visit. Only CONFIRMED events in the United States. Records start January 2022.
+    # name is a visit. Only CONFIRMED events, dropping those abroad. Records start January 2022.
     "uc_davis": {
         "file": "ucdavis.xlsx",
         "sheet": "Export",
@@ -444,6 +444,38 @@ VISIT_FILES = {
         "nces_id": None,
         "event_type": "Event Code",
         "keep": {"Trip Approval": ["Completed", "Scheduled"]},
+    },    # Michigan FOIA request (26-330). Salesforce export, one row per event; the school (with
+    # city and state) comes from the linked school record. The title sets the category;
+    # community-college transfer visits and fairs are dropped.
+    "wmu": {
+        "file": "wmu.xlsx",
+        "date": "Event Start Date",
+        "title": "Organization Event: Event Name",
+        "school_name": "School",
+        "city_state": None,
+        "city": "City of School in Lookup",
+        "state": "State of School in Lookup",
+        "zip": None,
+        "nces_id": None,
+        "event_type": "Type",
+        "keep": {"Type": ["High School Visit", "College Fair/Day"]},   # transfer visits/fairs dropped
+    },    # Connecticut FOIA request (University Communications). Slate export, one row per event;
+    # no type column, so the title sets the category and a title that is only a school's
+    # name is a visit. Only CONFIRMED events, dropping those abroad.
+    "uconn": {
+        "file": "uconn.xlsx",
+        "date": "Date",
+        "date_format": "%m/%d/%Y",
+        "title": "Title",
+        "school_name": "Location",
+        "city_state": None,
+        "city": "City",
+        "state": "Region",
+        "zip": None,
+        "nces_id": None,
+        "event_type": None,
+        "default_type": "School Visit",
+        "keep": {"Status": ["CONFIRMED"], "Country": ["United States", ""]},   # "" = not given
     },
 }
 
