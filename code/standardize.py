@@ -23,6 +23,19 @@ import pandas as pd
 
 import config
 
+STATE_CODES = {n.upper(): c for n, c in {
+    "Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR", "California": "CA",
+    "Colorado": "CO", "Connecticut": "CT", "Delaware": "DE", "District of Columbia": "DC",
+    "Florida": "FL", "Georgia": "GA", "Hawaii": "HI", "Idaho": "ID", "Illinois": "IL",
+    "Indiana": "IN", "Iowa": "IA", "Kansas": "KS", "Kentucky": "KY", "Louisiana": "LA",
+    "Maine": "ME", "Maryland": "MD", "Massachusetts": "MA", "Michigan": "MI", "Minnesota": "MN",
+    "Mississippi": "MS", "Missouri": "MO", "Montana": "MT", "Nebraska": "NE", "Nevada": "NV",
+    "New Hampshire": "NH", "New Jersey": "NJ", "New Mexico": "NM", "New York": "NY",
+    "North Carolina": "NC", "North Dakota": "ND", "Ohio": "OH", "Oklahoma": "OK", "Oregon": "OR",
+    "Pennsylvania": "PA", "Rhode Island": "RI", "South Carolina": "SC", "South Dakota": "SD",
+    "Tennessee": "TN", "Texas": "TX", "Utah": "UT", "Vermont": "VT", "Virginia": "VA",
+    "Washington": "WA", "West Virginia": "WV", "Wisconsin": "WI", "Wyoming": "WY"}.items()}
+
 OUT_COLS = ["univ_id", "date", "title", "school_name", "city", "state", "zip",
             "nces_id", "event_type", "category"]
 
@@ -105,6 +118,8 @@ def standardize_one(univ_id, spec):
         out["city"], out["state"] = split_city_state(col(raw, spec, "city_state"))
     else:
         out["city"], out["state"] = col(raw, spec, "city"), col(raw, spec, "state").str.upper()
+    # Some files spell the state out ("Washington"): use the two-letter code everywhere
+    out["state"] = out["state"].replace(STATE_CODES)
 
     if spec.get("school_name"):
         out["school_name"] = col(raw, spec, "school_name")

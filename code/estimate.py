@@ -11,7 +11,8 @@ Main specification (university x recruitment cycle, weighted by matched eligible
     lambda_t  recruitment-cycle fixed effects (absorb Post_t)
     Exposed_i 1 if the university's state had no race-conscious admissions ban before SFFA
 
-Standard errors are clustered by state. Because there are few states, the table
+Standard errors are clustered by university (config.CLUSTER); spec (11) clusters
+by state instead. Because there are few clusters, the table
 also reports a wild cluster bootstrap p-value (restricted, Webb weights).
 
 Outputs (always, even with one university)
@@ -166,6 +167,7 @@ def run_specs(full, rng):
          {**base, "y": f"{MAIN_Y}_alt", "weight": "n_matched_alt"}),
         ("(9) ZIP-level URM share", p_zip, {**base, "y": ZIP_Y, "weight": "n_zip"}),
         (f"(10) Baseline from >= {MIN_PRE_VISITS} pre-SFFA visits", p_big, base),
+        ("(11) Clustered by state", p, {**base, "cluster": "state"}),
     ]
 
     rows = []
@@ -182,6 +184,24 @@ def run_specs(full, rng):
         print(f"  {name:<34} beta = {r.loc[TREAT, 'coef']: .3f}  (se {r.loc[TREAT, 'se']:.3f}, "
               f"wild p = {r.loc[TREAT, 'p_wild']:.3f})")
     return pd.DataFrame(rows)
+
+
+def leave_one_out(full, rng):
+    """Main specification rerun once per university, leaving that university out, so a reader
+    can see whether any single university drives the estimate."""
+    p = full[full["n_matched"] > 0]
+    rows = []
+    for univ in sorted(p["univ_id"].unique()):
+        d = p[p["univ_id"] != univ]
+        try:
+            r = fit(d, MAIN_Y, [TREAT], ["univ_id", "cycle"], weight="n_matched", rng=rng)
+        except (np.linalg.LinAlgError, ValueError, ZeroDivisionError):
+            continue                                   # e.g. dropping a whole group's only state
+        rows.append({"left_out": univ, "exposed": int(p.loc[p["univ_id"] == univ, "exposed"].iat[0]),
+                     "matched_visits": int(p.loc[p["univ_id"] == univ, "n_matched"].sum()),
+                     "coef": r.loc[TREAT, "coef"], "se": r.loc[TREAT, "se"],
+                     "p_wild": r.loc[TREAT, "p_wild"]})
+    return pd.DataFrame(rows).sort_values("coef")
 
 
 def event_study(panel, time_col, ref, label_col=None):
@@ -237,7 +257,7 @@ def plot_event_study(es, ref_label, path, xlabel):
         ax.spines[s].set_visible(False)
     for s in ("left", "bottom"):
         ax.spines[s].set_color(muted)
-    ax.set_title(f"Reference period: {ref_label}. Bars are 95% CIs clustered by state.",
+    ax.set_title(f"Reference period: {ref_label}. Bars are 95% CIs clustered by {config.CLUSTER.replace('univ_id', 'university')}.",
                  fontsize=8, color=muted, loc="left")
     fig.tight_layout()
     fig.savefig(path)
@@ -260,8 +280,8 @@ def write_latex(results, path):
         "Drops 2023--24 & " + " & ".join("Yes" if "(4)" in s else "No" for s in keep["spec"]) + r" \\",
         r"Post $\times$ GOP share & " + " & ".join("Yes" if "(6)" in s else "No" for s in keep["spec"]) + r" \\",
         "Observations & " + " & ".join(str(int(n)) for n in keep["N"]) + r" \\",
-        "Universities & " + " & ".join(str(int(n)) for n in keep["n_univ"]) + r" \\",
-        "States (clusters) & " + " & ".join(str(int(n)) for n in keep["n_states"]) + r" \\",
+        "Universities (clusters) & " + " & ".join(str(int(n)) for n in keep["n_univ"]) + r" \\",
+        "States & " + " & ".join(str(int(n)) for n in keep["n_states"]) + r" \\",
         r"\hline", r"\end{tabular}",
     ]
     path.write_text("\n".join(lines) + "\n")
@@ -411,6 +431,12 @@ def main():
     results = run_specs(full, rng)
     results.to_csv(config.TABLES / "did_results.csv", index=False)
     write_latex(results, config.TABLES / "did_results.tex")
+
+    loo = leave_one_out(full, rng)
+    loo.to_csv(config.TABLES / "leave_one_out.csv", index=False)
+    print(f"\nLeave one university out (main spec): beta from {loo['coef'].min():.3f} "
+          f"to {loo['coef'].max():.3f}; smallest wild p = {loo['p_wild'].min():.3f}")
+    print(loo.round(3).to_string(index=False))
 
     ref_label = f"{config.EVENT_STUDY_REF_CYCLE}-{str(config.EVENT_STUDY_REF_CYCLE + 1)[-2:]}"
     try:

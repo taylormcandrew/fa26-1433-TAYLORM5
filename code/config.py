@@ -127,7 +127,7 @@ TITLE_SUFFIXES = [
 # ---------------------------------------------------------------------------
 # Inference
 # ---------------------------------------------------------------------------
-CLUSTER = "state"
+CLUSTER = "univ_id"     # cluster at the level treatment is assigned (university)
 BOOTSTRAP_REPS = 9999
 SEED = 1433
 
@@ -393,6 +393,57 @@ VISIT_FILES = {
         "event_type": None,
         "default_type": "School Visit",
         "keep": {"Form Status": ["CONFIRMED"], "Form Type": ["event"]},
+    },    # Idaho public records request (PRR 26-938). Slate export, one row per event; the school
+    # is named in the title ("Borah High School Visit"). Only CONFIRMED high-school visits and
+    # college fairs (send-offs and other templates dropped).
+    "boise_state": {
+        "file": "boisestate.xlsx",
+        "sheet": "Export",
+        "date": "Start Date",
+        "date_format": "%m/%d/%Y",
+        "title": "Title",
+        "school_name": None,            # taken from the title
+        "city_state": None,
+        "city": "City",
+        "state": "Region",
+        "zip": None,
+        "nces_id": None,
+        "event_type": "Template",
+        "keep": {"Status": ["CONFIRMED"],
+                 "Template": ["ADM High School Visit", "ADM College Fair"]},
+    },    # Nebraska public records request (NextRequest 26-667). A scanned 17-page report, read by
+    # OCR into unk.csv by code/prep_unk.py; the school is named in the title ("Adams Central
+    # HSV"). Only events marked Attended. Records start in August 2022.
+    "unk": {
+        "file": "unk.csv",
+        "date": "date",
+        "date_format": "%Y-%m-%d",
+        "title": "title",
+        "school_name": "school",        # from the title, "X HSV" -> "X High School"
+        "city_state": None,
+        "city": "city",
+        "state": "state",
+        "zip": None,
+        "nces_id": None,
+        "event_type": "type",
+        "keep": {"status": ["Attended"]},
+    },    # Washington public records request (NextRequest 26-1830), Seattle campus. CRM export, one
+    # row per event; the school is the host organization. Events that took place: "Completed",
+    # plus "Scheduled" (trip status often left unchanged after the event); declined and
+    # cancelled trips are dropped. The event title sets the category, the event code is the type.
+    "uw_seattle": {
+        "file": "uwseattle.xlsx",
+        "sheet": "Events",
+        "date": "Event Date",
+        "title": "Event Name",
+        "school_name": "Organization",
+        "city_state": None,
+        "city": "City",
+        "state": "State",
+        "zip": None,
+        "nces_id": None,
+        "event_type": "Event Code",
+        "keep": {"Trip Approval": ["Completed", "Scheduled"]},
     },
 }
 
