@@ -1,10 +1,29 @@
-University,State,Group,Source,Cycles,School visits,Matched,Match rate,Mean URM share,Share to >50% URM
-University of Colorado Boulder,CO,Treatment,Records request,all 5,3382,2908,0.86,0.28,0.14
-Pennsylvania College of Technology,PA,Treatment,Public calendar,"2021, 2022, 2024",307,233,0.76,0.24,0.11
-University of Alaska Fairbanks,AK,Treatment,Public calendar,"2021, 2022, 2023",248,187,0.75,0.27,0.11
-University of Pittsburgh-Greensburg,PA,Treatment,Public calendar,all 5,219,218,1.0,0.1,0.02
-Maine Maritime Academy,ME,Treatment,Public calendar,"2021, 2022, 2024, 2025",84,48,0.57,0.25,0.21
-University of Georgia,GA,Control,Public calendar,"2021, 2022, 2023, 2024",496,407,0.82,0.33,0.23
-University of Idaho,ID,Control,Public calendar,all 5,213,139,0.65,0.21,0.06
-University of Washington-Tacoma Campus,WA,Control,Public calendar,all 5,35,29,0.83,0.38,0.38
-Georgia State University,GA,Control,Public calendar,"2021, 2022, 2025",31,25,0.81,0.51,0.48
+University,State,Group,Cycles,Source,School visits,Matched,Match rate,URM share before,URM share after,After / before
+University of Connecticut,CT,Treatment,all 5,Records request,6843,5259,0.77,0.278,0.274,0.987
+University of Massachusetts-Amherst,MA,Treatment,all 5,Records request,3631,3048,0.84,0.224,0.24,1.073
+University of Colorado Boulder,CO,Treatment,all 5,Records request,3382,2981,0.88,0.299,0.274,0.914
+University of Texas at Austin,TX,Treatment,all 5,Records request,3318,1510,0.46,0.728,0.689,0.945
+Virginia Commonwealth University,VA,Treatment,all 5,Records request,2878,2435,0.85,0.367,0.352,0.959
+University of Cincinnati-Main Campus,OH,Treatment,all 5,Records request,2656,2332,0.88,0.22,0.212,0.966
+University of Minnesota-Twin Cities,MN,Treatment,all 5,Records request,2192,1898,0.87,0.253,0.24,0.946
+Montana State University,MT,Treatment,all 5,Records request,1929,1668,0.86,0.201,0.209,1.042
+University of Colorado Denver,CO,Treatment,all 5,Records request,844,665,0.79,0.423,0.414,0.979
+Pennsylvania College of Technology,PA,Treatment,"2021, 2022, 2024",Public calendar,307,245,0.8,0.198,0.31,1.565
+University of Alaska Fairbanks,AK,Treatment,"2021, 2022, 2023",Public calendar,248,209,0.84,0.27,0.268,0.99
+University of Pittsburgh-Greensburg,PA,Treatment,all 5,Public calendar,219,218,1.0,0.109,0.093,0.847
+Maine Maritime Academy,ME,Treatment,"2021, 2022, 2024, 2025",Public calendar,84,68,0.81,0.07,0.286,4.099
+Ohio State University-Main Campus,OH,Treatment,all 5,Public calendar,77,61,0.79,0.175,0.156,0.894
+Texas A&M University-College Station,TX,Control,all 5,Records request,7823,6868,0.88,0.616,0.636,1.032
+Texas Tech University,TX,Control,all 5,Records request,5965,3718,0.62,0.471,0.491,1.042
+Western Michigan University,MI,Control,all 5,Records request,3117,2446,0.78,0.247,0.25,1.013
+University of Washington-Seattle Campus,WA,Control,all 5,Records request,2068,1761,0.85,0.264,0.286,1.082
+University of California-Davis,CA,Control,all 5,Records request,1995,1329,0.67,0.5,0.456,0.912
+Boise State University,ID,Control,all 5,Records request,1262,1078,0.85,0.24,0.224,0.935
+Western Washington University,WA,Control,all 5,Records request,1133,995,0.88,0.246,0.256,1.044
+University of North Florida,FL,Control,all 5,Records request,1032,715,0.69,0.474,0.44,0.928
+Florida State University,FL,Control,"2022, 2023, 2024, 2025",Records request,795,547,0.69,0.487,0.463,0.951
+University of Georgia,GA,Control,"2021, 2022, 2023, 2024",Public calendar,496,429,0.86,0.307,0.338,1.102
+University of Nebraska at Kearney,NE,Control,"2022, 2023, 2024, 2025",Records request,495,376,0.76,0.122,0.144,1.181
+University of Idaho,ID,Control,all 5,Public calendar,224,173,0.77,0.221,0.082,0.37
+University of Washington-Tacoma Campus,WA,Control,all 5,Public calendar,35,31,0.89,0.422,0.202,0.479
+Georgia State University,GA,Control,"2021, 2022, 2025",Public calendar,31,27,0.87,0.396,0.682,1.72

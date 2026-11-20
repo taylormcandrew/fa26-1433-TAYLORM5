@@ -34,8 +34,16 @@ import config
 THRESHOLDS = sorted({config.URM_THRESHOLD, *config.ROBUST_THRESHOLDS})
 FUZZY_MIN = 0.80   # minimum name similarity for a same-ZIP fuzzy match
 GENERIC_WORDS = {"jr", "sr", "senior", "junior", "middle", "upper", "secondary", "academy",
-                 "prep", "college", "catholic", "charter", "magnet", "regional", "township", "day",
+                 "prep", "college", "catholic", "charter", "magnet", "regional", "township", "day", "k12",
                  "and", "at", "for", "campus", "state", "inc", "ltd", "academic", "visit"}
+# Words that make two names different schools, so a name that differs from another only by
+# these is NOT the same school: "East Central HS" is not "Central HS", "Bryan Christian HS"
+# is not "Bryan HS", "Crockett Early College HS" may not be "Crockett HS".
+DIFFERENT_WORDS = {"north", "south", "east", "west", "northeast", "northwest", "southeast",
+                   "southwest", "central", "new", "old", "upper", "lower", "christian", "catholic",
+                   "lutheran", "baptist", "episcopal", "jewish", "adventist", "islamic", "montessori",
+                   "charter", "virtual", "online", "alternative", "international", "early", "college",
+                   "middle", "elementary", "community", "career", "technical", "tech", "arts", "magnet"}
 
 
 def ycol(t):
@@ -43,9 +51,15 @@ def ycol(t):
 
 
 def norm_text(s):
+    """Lower-case text for comparing places; common abbreviations are spelled out on both
+    sides so "Corp Christi"/"Corpus Christi", "St. Paul"/"Saint Paul", "Ft Worth" agree."""
     if pd.isna(s):
         return ""
-    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", str(s).lower())).strip()
+    s = re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", str(s).lower())).strip()
+    for short, full in [("st", "saint"), ("ste", "sainte"), ("ft", "fort"), ("mt", "mount"),
+                        ("corp", "corpus")]:
+        s = re.sub(rf"\b{short}\b", full, s)
+    return s
 
 
 def norm_name(s):
@@ -126,10 +140,42 @@ def fuzzy_within(v, hs, keys, label, min_score=FUZZY_MIN, strip_city=False):
         contained = False
         if w1 and w2 and (w1 <= w2 or w2 <= w1):
             extra = (w1 | w2) - (w1 & w2)
-            contained = all(w in GENERIC_WORDS or w in city_words or w.isdigit() for w in extra)
+            contained = all(w in GENERIC_WORDS or w in city_words or w.isdigit() or len(w) == 1
+                            for w in extra)
         if scores[best] >= min_score or contained:
             v.at[i, "nces_id"] = cand.at[best, "nces_id"]
             v.at[i, "match_method"] = f"{label}:{scores[best]:.2f}"
+
+
+def contained_within_city(v, hs):
+    """One name inside the other, in the same city and state: "J W Nixon High School" =
+    "NIXON H S", "Nampa High School" = "NAMPA SENIOR HIGH SCHOOL", "Earl Warren High School"
+    = "WARREN H S". Accepted only if exactly one school in that city qualifies, the shorter
+    name has a distinctive word, and the extra words don't mark a different school
+    (DIFFERENT_WORDS). If the shorter name is only the city's name ("Nampa HS"), the extra
+    words must be generic ("senior", "k12"), so "McAllen Convention Center" is not matched
+    to "McAllen HS". University records often use a school's full name and NCES a short one."""
+    words = lambda n: set(n.split()) - {"hs"}
+    ok_hs = hs[(hs["city_n"] != "") & (hs["state_n"] != "")]
+    groups = {k: g for k, g in ok_hs.groupby(["city_n", "state_n"])}
+    rows = v.index[v["nces_id"].isna() & v["city_n"].ne("") & v["state_n"].ne("") & v["name_n"].ne("")]
+    for i in rows:
+        cand = groups.get((v.at[i, "city_n"], v.at[i, "state_n"]))
+        if cand is None:
+            continue
+        w1, city = words(v.at[i, "name_n"]), set(v.at[i, "city_n"].split())
+        hits = []
+        for j, n in cand["name_n"].items():
+            w2 = words(n)
+            small, extra = (w1, w2 - w1) if w1 <= w2 else (w2, w1 - w2) if w2 <= w1 else (None, None)
+            if not small or not (small - GENERIC_WORDS - DIFFERENT_WORDS) or (extra & DIFFERENT_WORDS):
+                continue
+            only_city = not (small - GENERIC_WORDS - city)
+            if only_city and not all(w in GENERIC_WORDS or w.isdigit() or len(w) == 1 for w in extra):
+                continue
+            hits.append(j)
+        if len(hits) == 1:
+            v.at[i, "nces_id"], v.at[i, "match_method"] = cand.at[hits[0], "nces_id"], "contained_city"
 
 
 def match_schools(v, unis):
@@ -183,6 +229,8 @@ def match_schools(v, unis):
     fuzzy_within(v, hs, ["zip"], "fuzzy_zip")
     # Same, within the same city and state (for sources without ZIPs, e.g. scraped pages)
     fuzzy_within(v, hs, ["city_n", "state_n"], "fuzzy_city", min_score=0.90, strip_city=True)
+    # One name inside the other, unique in the city (full vs. short school names)
+    contained_within_city(v, hs)
 
     # 6. No location in the record (often virtual visits): the university's home
     #    state first, then anywhere, only if the name is unique there.
@@ -216,6 +264,14 @@ def match_schools(v, unis):
         print(f"  matched {v.loc[e, 'matched'].mean():.1%} of eligible visits")
     print("  match methods (eligible visits):",
           v.loc[e, "match_method"].fillna("unmatched").str.split(":").str[0].value_counts().to_dict())
+    # A sample of the new rule's matches, to check by eye that they are the same school
+    new = v[e & v["match_method"].eq("contained_city")].drop_duplicates(["school_name", "nces_id"])
+    if len(new):
+        names = hs.drop_duplicates("nces_id").set_index("nces_id")["school_name"]
+        print(f"  contained_city matched {v.loc[e, 'match_method'].eq('contained_city').sum():,} visits; "
+              "a sample (record -> NCES school):")
+        for r in new.sample(min(25, len(new)), random_state=0).itertuples():
+            print(f"    {r.school_name} ({r.city}, {r.state}) -> {names.get(r.nces_id, '?')}")
     print(f"  {unmatched['main_outcome'].sum():,} unmatched schools for the main outcome listed in "
           f"{config.UNMATCHED.relative_to(config.ROOT)}")
     return v.drop(columns=["name_n", "city_n", "state_n"])

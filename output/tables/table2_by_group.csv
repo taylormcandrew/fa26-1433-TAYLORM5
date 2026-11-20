@@ -1,7 +1,9 @@
 ,Before SFFA,After SFFA,Change
-Treatment (5 universities): matched visits,875,"2,719",
-   Share to >50% URM schools,0.133,0.131,-0.002
-   Mean URM share of visited schools,0.264,0.263,-0.001
-Control (4 universities): matched visits,225,375,
-   Share to >50% URM schools,0.169,0.235,+0.066
-   Mean URM share of visited schools,0.280,0.334,+0.054
+Treatment (14 universities): matched visits,"7,453","15,144",
+   URM share relative to own pre-SFFA mean (main outcome),1.000,0.997,-0.003
+   Mean URM share of visited schools,0.310,0.289,-0.021
+   Share of visits to schools >50% URM,0.209,0.180,-0.029
+Control (14 universities): matched visits,"7,092","13,401",
+   URM share relative to own pre-SFFA mean (main outcome),1.000,1.020,+0.020
+   Mean URM share of visited schools,0.440,0.451,+0.011
+   Share of visits to schools >50% URM,0.375,0.382,+0.007
