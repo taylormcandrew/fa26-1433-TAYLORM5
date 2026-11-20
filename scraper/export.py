@@ -1,8 +1,9 @@
 """export.py: hand the event data to the regression code, for every university at once.
 
-Two sources of advertised recruiting events are combined:
+Three sources of advertised recruiting events are combined:
   1. our own scraper:            scraper/output/events.csv   (made by harvest.py)
   2. Professor Cohen's package:  data/raw/college-recruitment-data/data/events.csv
+  3. extra_sites.py (five non-Slate schedules): scraper/output/extra_events.csv
 A university found in both gets the events of both, with identical events (same date and
 same title) kept once.
 
@@ -94,6 +95,21 @@ def scraped_events():
         "source": "own scraper"})
 
 
+def extra_events():
+    """Events from extra_sites.py (five universities with non-Slate schedules): school
+    visits and college fairs only; virtual, on-campus and general events are left out."""
+    path = SCRAPER / "output" / "extra_events.csv"
+    if not path.exists():
+        return pd.DataFrame()
+    ev = pd.read_csv(path, dtype=str).fillna("")
+    ev = ev[(ev["excluded"] == "") & ~ev["status"].str.contains("cancel|postpon", case=False)]
+    return pd.DataFrame({
+        "univ_id": ev["univ_id"], "date": ev["date"], "title": ev["title"],
+        "city_state": [f"{c}, {s}" if c and s else (f", {s}" if s else "")
+                       for c, s in zip(ev["city"], ev["state"])],
+        "zip": "", "event_type": ev["event_type"], "source": "extra sites"})
+
+
 def package_events():
     """Professor Cohen's events: school visits and college fairs that aren't virtual
     (his `first_year_candidate == 1`), in the export format."""
@@ -124,6 +140,10 @@ def names():
             out[SAME_UNIVERSITY.get(r.univ_id, r.univ_id)] = (r.university, r.institution_state)
     for r in pd.read_csv(SCRAPER / "calendars.csv", dtype=str).itertuples():
         out[r.univ_id] = (r.name, r.state)
+    if (SCRAPER / "output" / "extra_events.csv").exists():
+        extra = pd.read_csv(SCRAPER / "output" / "extra_events.csv", dtype=str)
+        for r in extra.drop_duplicates("univ_id").itertuples():
+            out[r.univ_id] = (r.university, r.univ_state)
     return out
 
 
@@ -133,7 +153,7 @@ def exposed(univ, state):
 
 
 if __name__ == "__main__":
-    events = pd.concat([scraped_events(), package_events()], ignore_index=True)
+    events = pd.concat([scraped_events(), extra_events(), package_events()], ignore_index=True)
     events = events[~events["univ_id"].isin(EXCLUDE)]
     # The same event found by both sources (same university, date and title) is kept once.
     key = events["title"].str.lower().str.replace(r"[^a-z0-9]", "", regex=True)
